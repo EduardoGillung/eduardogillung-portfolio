@@ -3,6 +3,7 @@ import Contact from '../pages/contact';
 import AboutUs from '../pages/aboutUs';
 import MainLayout from '../layouts/mainLayout';
 import Home from '../pages/home';
+import Test from '../pages/test';
 
 
 const AppRouter = () => {
@@ -10,9 +11,11 @@ const AppRouter = () => {
     <BrowserRouter>
       <MainLayout>
         <Routes>
-            <Route path="/Home" element={<Home />} />
-            <Route path="/Contact" element={<Contact />} />
-            <Route path="/AboutUs" element={<AboutUs />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/aboutUs" element={<AboutUs />} />
+            <Route path="/test" element={<Test />} />
         </Routes>
       </MainLayout>
     </BrowserRouter>
