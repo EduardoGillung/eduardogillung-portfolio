@@ -1,6 +1,6 @@
-# DentalCare - Website Profissional
+# Dental test
 
-Website moderno e responsivo para clínicas odontológicas, desenvolvido com React, TypeScript e Tailwind CSS.
+Website para clínicas odontológicas, desenvolvido com React, TypeScript e Tailwind CSS.
 
 ## 🚀 Tecnologias
 
@@ -42,10 +42,7 @@ src/
 - **Fonte**: Inter (Google Fonts)
 - **Pesos**: 300, 400, 500, 600, 700
 
-### Componentes
-- **Header**: Navegação limpa com logo e menu responsivo
-- **Footer**: Informações organizadas em grid responsivo
-- **Layout**: Estrutura flexível com container centralizado
+
 
 ## 🛠️ Como Executar
 
@@ -63,24 +60,13 @@ src/
    ```bash
    npm run build
    ```
-## 📱 Responsividade
 
 O projeto é totalmente responsivo com breakpoints:
 - **Mobile**: < 768px
 - **Tablet**: 768px - 1024px
 - **Desktop**: > 1024px
 
-## 🎯 Características
 
-- ✅ Design moderno e profissional
-- ✅ Código limpo e organizado
-- ✅ Componentes reutilizáveis
-- ✅ Tipagem TypeScript
-- ✅ Responsivo
-- ✅ Performance otimizada
-- ✅ Acessibilidade básica
-
-## 🔧 Configurações
 
 ### Tailwind CSS
 - Configuração customizada em `tailwind.config.js`
