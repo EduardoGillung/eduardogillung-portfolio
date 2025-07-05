@@ -1,8 +1,8 @@
-import { Routes, Route, BrowserRouter } from 'react-router';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Contact from '../pages/contact';
 import AboutUs from '../pages/aboutUs';
 import MainLayout from '../layouts/mainLayout';
-import Home from '../pages/Home';
+import Home from '../pages/home';
 
 
 const AppRouter = () => {
