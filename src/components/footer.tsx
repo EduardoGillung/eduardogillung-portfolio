@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logoDental from '../assets/logo-dental-solutions.svg';
 
 const Footer = () => {
 
@@ -22,14 +23,12 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-3 group">
-              <div className="w-8 h-8 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center group-hover:from-cyan-600 group-hover:to-blue-700 transition-all duration-300">
-                <span className="text-white font-bold text-sm">🦷</span>
-              </div>
-              <span className="text-lg font-semibold group-hover:text-cyan-400 transition-colors">
-                DentalCare
+              <img src={logoDental} alt="Logo Dental Solutions" className="w-8 h-8" />
+              <span className="text-lg font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors">
+                Dental Solutions
               </span>
             </Link>
-            <p className="text-slate-300 text-sm leading-relaxed">
+            <p className="text-slate-200 text-sm leading-relaxed">
               Cuidando do seu sorriso com tecnologia de ponta e profissionais experientes. 
               Sua saúde bucal é nossa prioridade.
             </p>
@@ -38,7 +37,7 @@ const Footer = () => {
                 <a
                   key={social.label}
                   href={social.href}
-                  className="text-slate-400 hover:text-cyan-400 transition-colors p-2 rounded-lg hover:bg-slate-800/50"
+                  className="text-slate-300 hover:text-cyan-400 transition-colors p-2 rounded-lg hover:bg-slate-800/50"
                   aria-label={social.label}
                 >
                   <span className="text-xl">{social.icon}</span>
@@ -50,7 +49,7 @@ const Footer = () => {
           
           {/* Contact Info */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-slate-100">Contato</h3>
+            <h3 className="text-lg font-semibold text-cyan-400">Contato</h3>
             <div className="space-y-3">
               {contactInfo.map((contact, index) => (
                 <div key={index} className="flex items-center space-x-3 text-slate-300 text-sm">
@@ -63,8 +62,8 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-slate-700/50 mt-8 pt-8 text-center">
-          <p className="text-slate-400 text-sm">
-            &copy; 2024 DentalCare. Todos os direitos reservados.
+          <p className="text-slate-500 text-sm">
+            &copy; 2024 Dental Solutions. Todos os direitos reservados.
           </p>
         </div>
       </div>

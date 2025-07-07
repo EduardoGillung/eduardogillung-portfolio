@@ -73,16 +73,16 @@ const AboutUs = () => {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="text-center py-12 bg-gradient-to-br from-slate-800/80 via-slate-700/30 to-slate-800/80 rounded-2xl">
+      <section className="text-center py-12 bg-gradient-to-br from-blue-500 via-slate-200 to-cyan-500 rounded-3xl">
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-slate-100 mb-6">
             Sua Saúde Bucal em <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Primeiro Lugar</span>
           </h1>
-          <p className="text-xl text-slate-300 mb-8 leading-relaxed">
+          <p className="text-xl text-slate-700 mb-8 leading-relaxed">
             Há mais de 15 anos cuidando de sorrisos com excelência, tecnologia de ponta e 
             atendimento humanizado. Sua confiança é nossa maior conquista.
           </p>
-          <div className="flex flex-wrap justify-center gap-6 text-slate-300">
+          <div className="flex flex-wrap justify-center gap-6 text-slate-700">
             <div className="flex items-center space-x-2">
               <span className="text-2xl">👨‍⚕️</span>
               <span className="font-medium">15+ Anos de Experiência</span>
@@ -102,10 +102,10 @@ const AboutUs = () => {
       {/* Missão e Valores */}
       <section className="grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <h2 className="text-3xl font-bold text-slate-100 mb-6">
+          <h2 className="text-3xl font-bold text-slate-600 mb-6">
             Nossa <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Missão</span>
           </h2>
-          <p className="text-lg text-slate-300 mb-6 leading-relaxed">
+          <p className="text-lg text-slate-700 mb-6 leading-relaxed">
             Proporcionar saúde bucal de qualidade para toda a família, através de tratamentos 
             personalizados, tecnologia avançada e atendimento humanizado, contribuindo para 
             a autoestima e bem-estar de nossos pacientes.
@@ -113,20 +113,20 @@ const AboutUs = () => {
           <div className="space-y-4">
             <div className="flex items-start space-x-3">
               <span className="text-cyan-400 text-xl">✓</span>
-              <span className="text-slate-300">Atendimento personalizado para cada paciente</span>
+              <span className="text-slate-700">Atendimento personalizado para cada paciente</span>
             </div>
             <div className="flex items-start space-x-3">
               <span className="text-cyan-400 text-xl">✓</span>
-              <span className="text-slate-300">Tecnologia de ponta para diagnósticos precisos</span>
+              <span className="text-slate-700">Tecnologia de ponta para diagnósticos precisos</span>
             </div>
             <div className="flex items-start space-x-3">
               <span className="text-cyan-400 text-xl">✓</span>
-              <span className="text-slate-300">Ambiente acolhedor e seguro</span>
+              <span className="text-slate-700">Ambiente acolhedor e seguro</span>
             </div>
           </div>
         </div>
-        <div className="bg-gradient-to-br from-cyan-600 to-blue-600 rounded-2xl p-8 text-white shadow-xl">
-          <h3 className="text-2xl font-bold mb-6">Nossos Valores</h3>
+        <div className="bg-gradient-to-r from-cyan-600 to-blue-600 rounded-2xl p-8 text-white shadow-xl">
+          <h3 className="text-2xl font-bold mb-6 text-white">Nossos Valores</h3>
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <span className="text-2xl">💙</span>
@@ -151,23 +151,23 @@ const AboutUs = () => {
       {/* Serviços */}
       <section>
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-slate-100 mb-4">
+          <h2 className="text-3xl font-bold text-slate-600 mb-4">
             Nossos <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Serviços</span>
           </h2>
-          <p className="text-lg text-slate-300 max-w-2xl mx-auto">
+          <p className="text-lg text-slate-700 max-w-2xl mx-auto">
             Oferecemos uma gama completa de tratamentos odontológicos com a mais alta 
             qualidade e tecnologia disponível no mercado.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
-            <div key={index} className="bg-slate-800/70 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-slate-700/50 hover:shadow-xl transition-shadow">
+            <div key={index} className="bg-gradient-to-br from-cyan-400 via-slate-200 to-slate-200 rounded-3xl p-6 shadow-lg border border-slate-700/50 hover:shadow-xl transition-shadow">
               <div className="text-4xl mb-4">{service.icon}</div>
               <h3 className="text-xl font-bold text-slate-100 mb-3">{service.title}</h3>
-              <p className="text-slate-300 mb-4 text-sm">{service.description}</p>
+              <p className="text-slate-700 mb-4 text-sm">{service.description}</p>
               <ul className="space-y-2">
                 {service.features.map((feature, idx) => (
-                  <li key={idx} className="text-sm text-slate-300 flex items-center space-x-2">
+                  <li key={idx} className="text-sm text-slate-700 flex items-center space-x-2">
                     <span className="text-cyan-400">•</span>
                     <span>{feature}</span>
                   </li>
@@ -179,12 +179,12 @@ const AboutUs = () => {
       </section>
 
       {/* Diferenciais */}
-      <section className="bg-gradient-to-br from-slate-800/80 via-slate-700/30 to-slate-800/80 rounded-2xl p-8">
+      <section className="bg-gradient-to-r from-cyan-500 to-blue-700 rounded-3xl p-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-slate-100 mb-4">
-            Por que Escolher a <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">DentalCare</span>?
+            Por que Escolher a <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-100">DentalCare</span>?
           </h2>
-          <p className="text-lg text-slate-300">
+          <p className="text-lg text-slate-200">
             Nossos diferenciais garantem o melhor tratamento para você e sua família.
           </p>
         </div>
@@ -193,7 +193,7 @@ const AboutUs = () => {
             <div key={index} className="text-center">
               <div className="text-4xl mb-4">{benefit.icon}</div>
               <h3 className="text-xl font-bold text-slate-100 mb-3">{benefit.title}</h3>
-              <p className="text-slate-300 text-sm">{benefit.description}</p>
+              <p className="text-slate-200 text-sm">{benefit.description}</p>
             </div>
           ))}
         </div>
@@ -202,22 +202,22 @@ const AboutUs = () => {
       {/* Depoimentos */}
       <section>
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-slate-100 mb-4">
+          <h2 className="text-3xl font-bold text-slate-700/50 mb-4">
             O que Nossos <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Pacientes</span> Dizem
           </h2>
-          <p className="text-lg text-slate-300">
+          <p className="text-lg text-slate-700">
             A satisfação dos nossos pacientes é nossa maior recompensa.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-slate-800/70 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-slate-700/50">
+            <div key={index} className="bg-white rounded-xl p-6 shadow-lg border border-slate-700/50">
               <div className="flex text-amber-400 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <span key={i} className="text-xl">⭐</span>
                 ))}
               </div>
-              <p className="text-slate-300 mb-4 italic">"{testimonial.content}"</p>
+              <p className="text-slate-700 mb-4 italic">"{testimonial.content}"</p>
               <div>
                 <p className="font-bold text-slate-100">{testimonial.name}</p>
                 <p className="text-sm text-slate-400">{testimonial.role}</p>
@@ -229,7 +229,7 @@ const AboutUs = () => {
 
       {/* CTA Final */}
       <section className="bg-gradient-to-r from-cyan-600 to-blue-600 rounded-2xl p-8 text-white text-center shadow-xl">
-        <h2 className="text-3xl font-bold mb-4">
+        <h2 className="text-3xl font-bold mb-4 text-cyan-100">
           Pronto para Transformar Seu Sorriso?
         </h2>
         <p className="text-xl mb-6 opacity-90">
