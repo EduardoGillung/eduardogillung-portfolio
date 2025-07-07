@@ -42,7 +42,7 @@ const Home = () => {
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-7xl font-bold text-slate-100 mb-8 leading-tight">
               Seu Sorriso, 
-              <span className="text-cyan-400 block font-extrabold tracking-tight">Nossa Missão</span>
+              <span className="text-cyan-300 block font-extrabold tracking-tight">Nossa Missão</span>
             </h1>
             <p className="text-xl md:text-2xl text-white mb-12 leading-relaxed">
               Cuidamos da sua saúde bucal com excelência, tecnologia avançada e 

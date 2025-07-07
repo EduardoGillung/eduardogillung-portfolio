@@ -83,7 +83,7 @@ const Contact = () => {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="text-center py-12 bg-gradient-to-br from-cyan-400 via-slate-200 to-slate-200 rounded-3xl">
+      <section className="text-center py-12 bg-gradient-to-br from-blue-500 via-slate-200 to-cyan-500 rounded-3xl">
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-slate-100 mb-6">
             Entre em <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Contato conosco</span>
@@ -112,9 +112,9 @@ const Contact = () => {
       {/* Formulário e Informações */}
       <section className="grid lg:grid-cols-2 gap-12">
         {/* Formulário de Contato */}
-        <div className="bg-gradient-to-r from-cyan-500 to-blue-700 rounded-3xl p-8 shadow-lg border border-slate-100">
+        <div className="bg-gradient-to-r from-cyan-600 to-blue-500 rounded-2xl p-8 text-white shadow-xl border-slate-100">
           <h2 className="text-2xl font-bold text-slate-100 mb-6">
-            Envie sua <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Mensagem</span>
+            Envie sua <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-100">Mensagem</span>
           </h2>
           
           {submitStatus === "success" && (
@@ -152,7 +152,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 border border-slate-600 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-colors bg-slate-700/50 text-slate-100 placeholder-slate-400"
+                  className="w-full px-4 py-3 border border-cyan-200 rounded-lg focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 transition-colors bg-slate-50 text-slate-700 placeholder-slate-400"
                   placeholder="Seu nome completo"
                 />
               </div>
@@ -167,7 +167,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 border border-slate-600 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-colors bg-slate-700/50 text-slate-100 placeholder-slate-400"
+                  className="w-full px-4 py-3 border border-cyan-200 rounded-lg focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 transition-colors bg-slate-50 text-slate-700 placeholder-slate-400"
                   placeholder="seu@email.com"
                 />
               </div>
@@ -184,7 +184,7 @@ const Contact = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-slate-600 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-colors bg-slate-700/50 text-slate-100 placeholder-slate-400"
+                  className="w-full px-4 py-3 border border-cyan-200 rounded-lg focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 transition-colors bg-slate-50 text-slate-700 placeholder-slate-400"
                   placeholder="(11) 99999-9999"
                 />
               </div>
@@ -197,7 +197,7 @@ const Contact = () => {
                   name="subject"
                   value={formData.subject}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-slate-600 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-colors bg-slate-700/50 text-slate-100"
+                  className="w-full px-4 py-3 border border-cyan-200 rounded-lg focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 transition-colors bg-slate-50 text-slate-700"
                 >
                   <option value="">Selecione um assunto</option>
                   <option value="agendamento">Agendamento de Consulta</option>
@@ -220,13 +220,13 @@ const Contact = () => {
                 onChange={handleInputChange}
                 required
                 rows={6}
-                className="w-full px-4 py-3 border border-slate-600 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-colors resize-none bg-slate-700/50 text-slate-100 placeholder-slate-400"
+                className="w-full px-4 py-3 border border-cyan-200 rounded-lg focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 transition-colors resize-none bg-slate-50 text-slate-700 placeholder-slate-400"
                 placeholder="Descreva sua necessidade ou dúvida..."
               />
             </div>
 
             <button
-              className="bg-gradient-to-br from-cyan-400 via-slate-200 to-slate-200 rounded-3xl text-slate-800 font-bold text-lg px-8 py-4 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="bg-white rounded-3xl text-slate-800 font-bold text-lg px-8 py-4 transition-all duration-300 shadow-lg hover:shadow-xl"
               type="submit"
               disabled={!isFormValid || isSubmitting}
             >
@@ -272,7 +272,7 @@ const Contact = () => {
           <h2 className="text-3xl font-bold text-slate-100 mb-4">
             Nossa <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Localização</span>
           </h2>
-          <p className="text-lg text-slate-700">
+          <p className="text-lg text-slate-200">
             Venha nos visitar! Estamos localizados em uma região de fácil acesso com estacionamento gratuito.
           </p>
         </div>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logoDental from '../assets/logo-dental-solutions.svg';
+import logoDental from '../assets/logo-dental.svg';
 
 const Footer = () => {
 
@@ -23,7 +23,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-3 group">
-              <img src={logoDental} alt="Logo Dental Solutions" className="w-8 h-8" />
+              <img src={logoDental} alt="Logo Dental Solutions" className="w-8 h-8 rounded-full" />
               <span className="text-lg font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors">
                 Dental Solutions
               </span>

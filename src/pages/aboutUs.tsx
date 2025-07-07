@@ -163,7 +163,7 @@ const AboutUs = () => {
           {services.map((service, index) => (
             <div key={index} className="bg-gradient-to-br from-cyan-400 via-slate-200 to-slate-200 rounded-3xl p-6 shadow-lg border border-slate-700/50 hover:shadow-xl transition-shadow">
               <div className="text-4xl mb-4">{service.icon}</div>
-              <h3 className="text-xl font-bold text-slate-100 mb-3">{service.title}</h3>
+              <h3 className="text-xl font-bold text-tertiary mb-3">{service.title}</h3>
               <p className="text-slate-700 mb-4 text-sm">{service.description}</p>
               <ul className="space-y-2">
                 {service.features.map((feature, idx) => (
@@ -217,10 +217,10 @@ const AboutUs = () => {
                   <span key={i} className="text-xl">⭐</span>
                 ))}
               </div>
-              <p className="text-slate-700 mb-4 italic">"{testimonial.content}"</p>
               <div>
-                <p className="font-bold text-slate-100">{testimonial.name}</p>
-                <p className="text-sm text-slate-400">{testimonial.role}</p>
+                <p className="font-bold text-slate-600">{testimonial.name}</p>
+                <p className="text-xs text-slate-400 mb-2">{testimonial.role}</p>
+                <p className="text-lg text-slate-700 mb-4 italic">"{testimonial.content}"</p>
               </div>
             </div>
           ))}
