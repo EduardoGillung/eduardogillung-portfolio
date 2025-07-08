@@ -1,5 +1,6 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
+import { Notification } from "../components/ui/notification";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -11,6 +12,7 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+  const [showNotification, setShowNotification] = useState(false);
 
   const contactMethods = [
     {
@@ -60,6 +62,7 @@ const Contact = () => {
         "Mppgnw9x94av_vrre"
       );
       setSubmitStatus("success");
+      setShowNotification(true);
       setFormData({
         name: "",
         email: "",
@@ -69,8 +72,10 @@ const Contact = () => {
       });
     } catch {
       setSubmitStatus("error");
+      setShowNotification(true);
     } finally {
       setIsSubmitting(false);
+      setTimeout(() => setShowNotification(false), 4000);
     }
   };
 
@@ -78,6 +83,18 @@ const Contact = () => {
 
   return (
     <div className="space-y-16">
+      <Notification
+        type={submitStatus === "success" ? "success" : "error"}
+        message={
+          submitStatus === "success"
+            ? "Email enviado com sucesso! Entraremos em contato em breve."
+            : submitStatus === "error"
+            ? "Erro ao enviar email. Tente novamente ou entre em contato por outro canal."
+            : ""
+        }
+        show={showNotification && submitStatus !== "idle"}
+        onClose={() => setShowNotification(false)}
+      />
       {/* Hero Section */}
       <section className="text-center py-12 bg-gradient-to-br from-blue-500 via-white to-cyan-500 rounded-3xl">
         <div className="max-w-4xl mx-auto px-4">
@@ -113,28 +130,6 @@ const Contact = () => {
             Envie sua <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 to-white">Mensagem</span>
           </h2>
           
-          {submitStatus === "success" && (
-            <div className="mb-6 p-4 bg-cyan-900/50 border border-cyan-700 rounded-lg">
-              <div className="flex items-center space-x-2">
-                <span className="text-cyan-400 text-xl">✓</span>
-                <span className="text-cyan-100 font-medium">
-                  Mensagem enviada com sucesso! Entraremos em contato em breve.
-                </span>
-              </div>
-            </div>
-          )}
-
-          {submitStatus === "error" && (
-            <div className="mb-6 p-4 bg-red-900/50 border border-red-700 rounded-lg">
-              <div className="flex items-center space-x-2">
-                <span className="text-red-400 text-xl">⚠</span>
-                <span className="text-red-100 font-medium">
-                  Erro ao enviar mensagem. Tente novamente ou entre em contato por telefone.
-                </span>
-              </div>
-            </div>
-          )}
-
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid md:grid-cols-2 gap-4">
               <div>
