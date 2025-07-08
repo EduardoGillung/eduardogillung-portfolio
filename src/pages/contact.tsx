@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -52,17 +53,12 @@ const Contact = () => {
     setSubmitStatus("idle");
 
     try {
-      // Simulação de envio de email (substitua por EmailJS real)
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      
-      // Aqui você integraria com EmailJS
-      // const result = await emailjs.send(
-      //   'YOUR_SERVICE_ID',
-      //   'YOUR_TEMPLATE_ID',
-      //   formData,
-      //   'YOUR_PUBLIC_KEY'
-      // );
-
+      await emailjs.send(
+        "service_8xjwmb7",
+        "template_bzchy44",
+        formData,
+        "Mppgnw9x94av_vrre"
+      );
       setSubmitStatus("success");
       setFormData({
         name: "",
