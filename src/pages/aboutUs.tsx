@@ -125,7 +125,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div className="bg-gradient-to-r from-cyan-600 to-blue-600 rounded-2xl p-8 text-white shadow-xl">
+        <div className="bg-gradient-to-br via-blue-400 to-cyan-100 from-cyan-300 rounded-2xl p-8 text-white shadow-xl">
           <h3 className="text-2xl font-bold mb-6 text-white">Nossos Valores</h3>
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
@@ -154,20 +154,20 @@ const AboutUs = () => {
           <h2 className="text-3xl font-bold text-slate-600 mb-4">
             Nossos <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Serviços</span>
           </h2>
-          <p className="text-lg text-slate-700 max-w-2xl mx-auto">
+          <p className="text-lg text-slate-500 max-w-2xl mx-auto">
             Oferecemos uma gama completa de tratamentos odontológicos com a mais alta 
             qualidade e tecnologia disponível no mercado.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
-            <div key={index} className="bg-gradient-to-br from-cyan-400 via-slate-200 to-slate-200 rounded-3xl p-6 shadow-lg border border-slate-700/50 hover:shadow-xl transition-shadow">
+            <div key={index} className="bg-gradient-to-br via-blue-200 to-white from-cyan-300 rounded-3xl p-6 shadow-lg hover:shadow-xl transition-shadow">
               <div className="text-4xl mb-4">{service.icon}</div>
-              <h3 className="text-xl font-bold text-tertiary mb-3">{service.title}</h3>
-              <p className="text-slate-700 mb-4 text-sm">{service.description}</p>
+              <h3 className="text-xl font-bold text-tertiary mb-3 text-cyan-950">{service.title}</h3>
+              <p className="text-cyan-900 mb-4 text-sm">{service.description}</p>
               <ul className="space-y-2">
                 {service.features.map((feature, idx) => (
-                  <li key={idx} className="text-sm text-slate-700 flex items-center space-x-2">
+                  <li key={idx} className="text-sm text-cyan-700 flex items-center space-x-2">
                     <span className="text-cyan-400">•</span>
                     <span>{feature}</span>
                   </li>
@@ -179,7 +179,7 @@ const AboutUs = () => {
       </section>
 
       {/* Diferenciais */}
-      <section className="bg-gradient-to-r from-cyan-500 to-blue-700 rounded-3xl p-8">
+      <section className="bg-gradient-to-br via-blue-400 to-cyan-100 from-cyan-300 rounded-3xl p-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-slate-100 mb-4">
             Por que Escolher a <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-100">DentalCare</span>?
@@ -202,10 +202,10 @@ const AboutUs = () => {
       {/* Depoimentos */}
       <section>
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-slate-700/50 mb-4">
+          <h2 className="text-3xl font-bold text-slate-600 mb-4">
             O que Nossos <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Pacientes</span> Dizem
           </h2>
-          <p className="text-lg text-slate-700">
+          <p className="text-lg text-slate-500">
             A satisfação dos nossos pacientes é nossa maior recompensa.
           </p>
         </div>
@@ -228,8 +228,8 @@ const AboutUs = () => {
       </section>
 
       {/* CTA Final */}
-      <section className="bg-gradient-to-r from-cyan-600 to-blue-600 rounded-2xl p-8 text-white text-center shadow-xl">
-        <h2 className="text-3xl font-bold mb-4 text-cyan-100">
+      <section className="bg-gradient-to-br via-blue-400 to-cyan-100 from-cyan-300 rounded-3xl p-12 md:p-16 text-center text-white shadow-xl">
+        <h2 className="text-3xl font-bold mb-4 text-white">
           Pronto para Transformar Seu Sorriso?
         </h2>
         <p className="text-xl mb-6 opacity-90">

@@ -101,7 +101,7 @@ const Home = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <div key={index} className="group">
-              <div className="bg-gradient-to-br via-blue-400 to-cyan-100 from-cyan-300 rounded-3xl p-8 shadow-lg border border-slate-700/50 hover:shadow-xl transition-all duration-300 group-hover:border-cyan-500/30">
+              <div className="bg-gradient-to-br via-blue-400 to-cyan-100 from-cyan-300 rounded-3xl p-8 shadow-lg  hover:shadow-xl transition-all duration-300 group-hover:border-cyan-500/30">
                 <div className="text-5xl mb-6 group-hover:scale-110 transition-transform">
                   {feature.icon}
                 </div>
@@ -123,7 +123,7 @@ const Home = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-slate-500 mb-8">
-                Por que Escolher a <span className="text-cyan-500">DentalCare</span>?
+                Por que Escolher a <span className="text-cyan-500">Nome Empresa</span>?
               </h2>
               <p className="text-xl text-slate-700 mb-8 leading-relaxed">
                 Há mais de 15 anos cuidando de sorrisos com excelência. Nossa equipe 
@@ -131,7 +131,7 @@ const Home = () => {
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-cyan-900 to-blue-900 rounded-full flex items-center justify-center">
+                  <div className="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center">
                     <span className="text-cyan-400 text-xl">✓</span>
                   </div>
                   <div>
@@ -140,7 +140,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-cyan-900 to-blue-900 rounded-full flex items-center justify-center">
+                  <div className="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center">
                     <span className="text-cyan-400 text-xl">✓</span>
                   </div>
                   <div>
@@ -149,7 +149,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-cyan-900 to-blue-900 rounded-full flex items-center justify-center">
+                  <div className="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center">
                     <span className="text-cyan-400 text-xl">✓</span>
                   </div>
                   <div>
@@ -160,10 +160,10 @@ const Home = () => {
               </div>
             </div>
             <div className="relative">
-              <div className="bg-gradient-to-br from-cyan-600 to-blue-600 rounded-2xl p-12 text-white text-center shadow-xl">
+              <div className="bg-gradient-to-br via-blue-400 to-cyan-100 from-cyan-300 rounded-2xl p-12 text-white text-center shadow-xl">
                 <div className="text-6xl mb-6">🦷</div>
                 <h3 className="text-2xl font-bold mb-4 text-white">Sua Saúde Bucal em Primeiro Lugar</h3>
-                <p className="text-cyan-100 leading-relaxed">
+                <p className="text-white leading-relaxed">
                   Cuidamos de você e de toda sua família com o mesmo carinho e 
                   profissionalismo que dedicamos aos nossos próprios familiares.
                 </p>
@@ -175,7 +175,7 @@ const Home = () => {
 
       {/* CTA Section */}
       <section className="container mx-auto px-4 max-w-6xl">
-        <div className="bg-gradient-to-r from-cyan-600 to-blue-600 rounded-3xl p-12 md:p-16 text-center text-white shadow-xl">
+        <div className="bg-gradient-to-br via-blue-400 to-cyan-100 from-cyan-300 rounded-3xl p-12 md:p-16 text-center text-white shadow-xl">
           <h2 className="text-4xl text-white md:text-5xl font-bold mb-6">
             Pronto para Transformar Seu Sorriso?
           </h2>

@@ -83,7 +83,7 @@ const Contact = () => {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="text-center py-12 bg-gradient-to-br from-blue-500 via-slate-200 to-cyan-500 rounded-3xl">
+      <section className="text-center py-12 bg-gradient-to-br from-blue-500 via-white to-cyan-500 rounded-3xl">
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-slate-100 mb-6">
             Entre em <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Contato conosco</span>
@@ -112,9 +112,9 @@ const Contact = () => {
       {/* Formulário e Informações */}
       <section className="grid lg:grid-cols-2 gap-12">
         {/* Formulário de Contato */}
-        <div className="bg-gradient-to-r from-cyan-600 to-blue-500 rounded-2xl p-8 text-white shadow-xl border-slate-100">
+        <div className="bg-gradient-to-br via-blue-500 to-cyan-200 from-cyan-400/70 rounded-2xl p-8 text-white shadow-xl border-slate-100">
           <h2 className="text-2xl font-bold text-slate-100 mb-6">
-            Envie sua <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-100">Mensagem</span>
+            Envie sua <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 to-white">Mensagem</span>
           </h2>
           
           {submitStatus === "success" && (
@@ -142,7 +142,7 @@ const Contact = () => {
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid md:grid-cols-2 gap-4">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-slate-200 mb-2">
+                <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
                   Nome Completo *
                 </label>
                 <input
@@ -157,7 +157,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-slate-200 mb-2">
+                <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
                   Email *
                 </label>
                 <input
@@ -175,7 +175,7 @@ const Contact = () => {
 
             <div className="grid md:grid-cols-2 gap-4">
               <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-slate-200 mb-2">
+                <label htmlFor="phone" className="block text-sm font-medium text-white mb-2">
                   Telefone
                 </label>
                 <input
@@ -189,7 +189,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-slate-200 mb-2">
+                <label htmlFor="subject" className="block text-sm font-medium text-white mb-2">
                   Assunto
                 </label>
                 <select
@@ -210,7 +210,7 @@ const Contact = () => {
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-slate-200 mb-2">
+              <label htmlFor="message" className="block text-sm font-medium text-white mb-2">
                 Mensagem *
               </label>
               <textarea
@@ -226,7 +226,7 @@ const Contact = () => {
             </div>
 
             <button
-              className="bg-white rounded-3xl text-slate-800 font-bold text-lg px-8 py-4 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="bg-gradient-to-br from-blue-100 via-[#e0e7ef] to-[#f8fafc] rounded-3xl font-bold text-lg px-8 py-4 transition-all duration-300 shadow-lg hover:shadow-xl hover:from-[#22d3ee] hover:via-[#f1f5f9] hover:to-[#f8fafc] hover:scale-105 hover:ring-2 hover:ring-[#22d3ee] focus:outline-none focus:ring-2 focus:ring-[#22d3ee] text-blue-900/80 drop-shadow-[0_2px_8px_rgba(34,140,255,0.35)]"
               type="submit"
               disabled={!isFormValid || isSubmitting}
             >
@@ -249,7 +249,7 @@ const Contact = () => {
 
           <div className="space-y-6">
             {contactMethods.map((method) => (
-              <div key={method.title} className="bg-gradient-to-r from-cyan-600 to-blue-600 rounded-3xl p-6 flex items-start space-x-4 shadow-md">
+              <div key={method.title} className="bg-gradient-to-br via-blue-400 to-cyan-300 from-blue-400 rounded-3xl p-6 flex items-start space-x-4 shadow-md">
                 <span className="text-3xl">{method.icon}</span>
                 <div>
                   <h3 className="text-lg font-bold text-white mb-1">{method.title}</h3>
@@ -267,17 +267,16 @@ const Contact = () => {
       </section>
 
       {/* Mapa e Localização */}
-      <section className="bg-gradient-to-r from-cyan-600 to-blue-600 rounded-3xl p-8">
+      <section className="bg-gradient-to-br via-blue-500 to-cyan-300 from-blue-400 rounded-3xl p-8">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-slate-100 mb-4">
-            Nossa <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Localização</span>
+            Nossa <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 to-blue-100">Localização</span>
           </h2>
-          <p className="text-lg text-slate-200">
+          <p className="text-lg text-white">
             Venha nos visitar! Estamos localizados em uma região de fácil acesso com estacionamento gratuito.
           </p>
         </div>
-        
-        <div className="bg-gradient-to-r from-cyan-600 to-blue-600 rounded-3xl p-6 shadow-lg border border-slate-100">
+        <div className="bg-gradient-to-br via-blue-500 to-cyan-300 from-blue-400 rounded-3xl p-6 shadow-lg border border-slate-100">
           <div className="aspect-video bg-slate-700/50 rounded-lg flex items-center justify-center">
             <div className="text-center">
               <span className="text-4xl mb-4 block">🗺️</span>
@@ -286,23 +285,6 @@ const Contact = () => {
             </div>
           </div>
           
-          <div className="mt-6 grid md:grid-cols-3 gap-4 text-center">
-            <div className="p-4 bg-cyan-900/30 rounded-lg">
-              <span className="text-2xl block mb-2">🚗</span>
-              <p className="font-medium text-slate-100">Estacionamento</p>
-              <p className="text-sm text-slate-100">Gratuito</p>
-            </div>
-            <div className="p-4 bg-cyan-900/30 rounded-lg">
-              <span className="text-2xl block mb-2">🚇</span>
-              <p className="font-medium text-slate-100">Metrô</p>
-              <p className="text-sm text-slate-100">Vila Madalena</p>
-            </div>
-            <div className="p-4 bg-cyan-900/30 rounded-lg">
-              <span className="text-2xl block mb-2">🚌</span>
-              <p className="font-medium text-slate-100">Ônibus</p>
-              <p className="text-sm text-slate-100">Várias linhas</p>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -318,7 +300,7 @@ const Contact = () => {
         </div>
         
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-gradient-to-r from-cyan-600 to-blue-600 rounded-3xl p-6 shadow-lg border border-slate-100">
+          <div className="bg-gradient-to-br via-blue-500 to-cyan-300 from-blue-400 rounded-3xl p-6 shadow-lg border border-slate-100">
             <h3 className="text-lg font-bold text-slate-100 mb-3">Como agendar uma consulta?</h3>
             <p className="text-slate-100 text-sm">
               Você pode agendar através do telefone, WhatsApp, email ou preenchendo o formulário acima. 
@@ -326,7 +308,7 @@ const Contact = () => {
             </p>
           </div>
           
-          <div className="bg-gradient-to-r from-cyan-600 to-blue-600 rounded-3xl p-6 shadow-lg border border-slate-100">
+          <div className="bg-gradient-to-br via-blue-500 to-cyan-300 from-blue-400 rounded-3xl p-6 shadow-lg border border-slate-100">
             <h3 className="text-lg font-bold text-slate-100 mb-3">Aceitam convênios?</h3>
             <p className="text-slate-100 text-sm">
               Sim! Trabalhamos com os principais convênios odontológicos. 
@@ -334,7 +316,7 @@ const Contact = () => {
             </p>
           </div>
           
-          <div className="bg-gradient-to-r from-cyan-600 to-blue-600 rounded-3xl p-6 shadow-lg border border-slate-100">
+          <div className="bg-gradient-to-br via-blue-500 to-cyan-300 from-blue-400 rounded-3xl p-6 shadow-lg border border-slate-100">
             <h3 className="text-lg font-bold text-slate-100 mb-3">Qual o prazo para resposta?</h3>
             <p className="text-slate-100 text-sm">
               Respondemos em até 24 horas em dias úteis. Para emergências, 
@@ -342,7 +324,7 @@ const Contact = () => {
             </p>
           </div>
           
-          <div className="bg-gradient-to-r from-cyan-600 to-blue-600 rounded-3xl p-6 shadow-lg border border-slate-100">
+          <div className="bg-gradient-to-br via-blue-500 to-cyan-300 from-blue-400 rounded-3xl p-6 shadow-lg border border-slate-100">
             <h3 className="text-lg font-bold text-slate-100 mb-3">Fazem atendimento de emergência?</h3>
             <p className="text-slate-100 text-sm">
               Sim! Para emergências odontológicas, temos um número específico 
