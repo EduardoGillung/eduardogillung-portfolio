@@ -38,7 +38,7 @@ const Home = () => {
   return (
     <div className="space-y-24">
       {/* Hero Section */}
-      <section className="relative overflow-hidden rounded-3xl border-slate-200 bg-gradient-to-br via-blue-400 to-cyan-100 from-cyan-300">
+      <section className="relative overflow-hidden rounded-3xl border-slate-200 bg-gradient-to-br via-blue-600 to-cyan-200 from-cyan-300">
         <Spotlight className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-40 w-[120%] h-[120%] pointer-events-none z-0" />
         <div className="relative z-10 container mx-auto px-4 max-w-6xl py-20">
           <div className="text-center max-w-4xl mx-auto">
@@ -101,7 +101,7 @@ const Home = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <div key={index} className="group">
-              <div className="bg-gradient-to-br via-blue-400 to-cyan-100 from-cyan-300 rounded-3xl p-8 shadow-lg  hover:shadow-xl transition-all duration-300 group-hover:border-cyan-500/30">
+              <div className="bg-gradient-to-br via-blue-500 to-cyan-200 from-cyan-300 rounded-3xl p-8 shadow-lg  hover:shadow-xl transition-all duration-300 group-hover:border-cyan-500/30">
                 <div className="text-5xl mb-6 group-hover:scale-110 transition-transform">
                   {feature.icon}
                 </div>

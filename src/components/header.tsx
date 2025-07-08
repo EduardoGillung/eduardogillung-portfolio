@@ -21,7 +21,7 @@ const Header = () => {
           <Link to="/" className="flex items-center space-x-3 group">
             <img src={logoDental} alt="Logo Nome Empresa" className="w-10 h-10 rounded-full" />
             <span className="text-xl font-bold transition-colors">
-              <span className="text-secondary">Nome</span> <span className="text-slate-700">Empresa</span>
+              <span className="bg-gradient-to-br from-cyan-300 via-blue-600 to-cyan-200 bg-clip-text text-transparent">Nome</span> <span className="text-slate-600">Empresa</span>
             </span>
           </Link>
 
@@ -41,7 +41,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 rounded-lg text-slate-700 hover:bg-blue-300 hover:text-cyan-100 transition-colors"
+            className="md:hidden p-2 rounded-lg text-slate-700 hover:bg-cyan-300 hover:text-cyan-100 transition-colors"
             onClick={() => setMobileMenuOpen(true)}
             aria-label="Abrir menu"
           >
