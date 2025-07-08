@@ -11,11 +11,11 @@ interface MobileNavProps {
 export const MobileNav: React.FC<MobileNavProps> = ({ open, onClose, navigationItems }) => {
   if (!open) return null;
   return (
-    <div className="fixed z-50 flex 0 top-0 left-0">
+    <div className="fixed z-50 flex 0 top-0 right-0">
       {/* Overlay */}
       <div className="fixed inset-0 bg-black/40" onClick={onClose} />
       {/* Drawer */}
-      <div className="relative bg-white w-72 max-w-[80vw] h-full shadow-2xl p-6 flex flex-col animate-slide-in-left border-r border-slate-100 rounded-r-xl">
+      <div className="relative bg-white w-72 max-w-[80vw] h-full shadow-2xl p-6 flex flex-col animate-slide-in-left border-r border-slate-100 rounded-l-xl">
         {/* Logo e fechar */}
         <div className="flex items-center justify-between mb-10">
           <Link to="/" className="flex items-center space-x-2" onClick={onClose}>
@@ -25,7 +25,7 @@ export const MobileNav: React.FC<MobileNavProps> = ({ open, onClose, navigationI
             </span>
           </Link>
           <button
-            className="text-slate-700 hover:text-cyan-500 p-1"
+            className="hover:text-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 p-1 rounded-full transition-colors"
             onClick={onClose}
             aria-label="Fechar menu"
           >
