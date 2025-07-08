@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
-import { Spotlight } from "../components/ui/Spotlight";
+import { Spotlight } from '../components/ui/spotlight';
+
 
 const Home = () => {
   const navigate = useNavigate();
@@ -37,29 +38,29 @@ const Home = () => {
   return (
     <div className="space-y-24">
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-3xl"></div>
-        {/* Spotlight decorativo no fundo */}
-        <Spotlight className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-35 w-[120%] h-[120%] pointer-events-none z-0" />
+      <section className="relative overflow-hidden rounded-3xl border-slate-200 bg-gradient-to-br via-blue-400 to-cyan-100 from-cyan-300">
+        <Spotlight className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-40 w-[120%] h-[120%] pointer-events-none z-0" />
         <div className="relative z-10 container mx-auto px-4 max-w-6xl py-20">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-7xl font-bold text-slate-100 mb-8 leading-tight">
+            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-cyan-50 via-white to-blue-300 bg-clip-text text-transparent drop-shadow-[0_4px_32px_rgba(34,211,238,0.35)] mb-8 leading-tight">
               Seu Sorriso, 
-              <span className="text-cyan-300 block font-extrabold tracking-tight">Nossa Missão</span>
+              <span className="block font-extrabold tracking-tight
+                bg-gradient-to-r from-cyan-200 via-white to-blue-200 bg-clip-text text-transparent">
+                Nossa Missão</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white mb-12 leading-relaxed">
+            <p className="text-xl md:text-2xl bg-gradient-to-r from-cyan-50 via-white to-cyan-100 bg-clip-text text-transparent drop-shadow-[0_4px_32px_rgba(34,211,238,0.35)] mb-12 leading-relaxed">
               Cuidamos da sua saúde bucal com excelência, tecnologia avançada e 
               atendimento humanizado. Sua confiança é nossa maior conquista.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
-                className="bg-gradient-to-br from-cyan-400 via-slate-200 to-slate-200 rounded-3xl text-slate-800 font-bold text-lg px-8 py-4 transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="bg-gradient-to-br from-[#22d3ee] via-[#e0e7ef] to-[#f8fafc] rounded-3xl font-bold text-lg px-8 py-4 transition-all duration-300 shadow-lg hover:shadow-xl hover:from-[#22d3ee] hover:via-[#f1f5f9] hover:to-[#f8fafc] hover:scale-105 hover:ring-2 hover:ring-[#22d3ee] focus:outline-none focus:ring-2 focus:ring-[#22d3ee] text-cyan-900 drop-shadow-[0_2px_8px_rgba(34,140,255,0.35)]"
                 onClick={() => navigate('/contact')}
               >
                 Agendar Consulta
               </button>
               <button
-                className="bg-gradient-to-br from-cyan-400 via-slate-200 to-slate-200 rounded-3xl text-slate-800 font-bold text-lg px-8 py-4 transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="bg-gradient-to-br from-[#22d3ee] via-[#e0e7ef] to-[#f8fafc] rounded-3xl font-bold text-lg px-8 py-4 transition-all duration-300 shadow-lg hover:shadow-xl hover:from-[#22d3ee] hover:via-[#f1f5f9] hover:to-[#f8fafc] hover:scale-105 hover:ring-2 hover:ring-[#22d3ee] focus:outline-none focus:ring-2 focus:ring-[#22d3ee] text-cyan-900 drop-shadow-[0_2px_8px_rgba(34,140,255,0.35)]"
                 onClick={() => navigate('/aboutUs')}
               >
                 Conhecer Mais
@@ -100,14 +101,14 @@ const Home = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <div key={index} className="group">
-              <div className="bg-gradient-to-r from-cyan-600 to-blue-600 rounded-3xl p-8 shadow-lg border border-slate-700/50 hover:shadow-xl transition-all duration-300 group-hover:border-cyan-500/30">
+              <div className="bg-gradient-to-br via-blue-400 to-cyan-100 from-cyan-300 rounded-3xl p-8 shadow-lg border border-slate-700/50 hover:shadow-xl transition-all duration-300 group-hover:border-cyan-500/30">
                 <div className="text-5xl mb-6 group-hover:scale-110 transition-transform">
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-bold text-slate-100 mb-4">
                   {feature.title}
                 </h3>
-                <p className="text-slate-300 leading-relaxed">
+                <p className="text-cyan-50 leading-relaxed">
                   {feature.description}
                 </p>
               </div>
@@ -117,11 +118,11 @@ const Home = () => {
       </section>
 
       {/* About Section */}
-      <section className="bg-gradient-to-br from-cyan-400 via-slate-200 to-slate-200 rounded-3xl">
+      <section>
         <div className="container mx-auto px-4 max-w-6xl py-20">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-slate-100 mb-8">
+              <h2 className="text-4xl md:text-5xl font-bold text-slate-500 mb-8">
                 Por que Escolher a <span className="text-cyan-500">DentalCare</span>?
               </h2>
               <p className="text-xl text-slate-700 mb-8 leading-relaxed">
