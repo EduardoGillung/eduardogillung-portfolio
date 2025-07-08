@@ -5,7 +5,7 @@ const Footer = () => {
 
   const contactInfo = [
     { icon: "📞", text: "(11) 99999-9999" },
-    { icon: "📧", text: "contato@dentalcare.com" },
+    { icon: "📧", text: "contato@nomedaempresa.com" },
     { icon: "📍", text: "Rua das Flores, 123 - São Paulo" },
     { icon: "🕒", text: "Seg-Sex: 8h às 18h" },
   ];
@@ -25,7 +25,7 @@ const Footer = () => {
             <Link to="/" className="flex items-center space-x-3 group">
               <img src={logoDental} alt="Logo Dental Solutions" className="w-8 h-8 rounded-full" />
               <span className="text-lg font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors">
-                Dental Solutions
+                Nome Empresa
               </span>
             </Link>
             <p className="text-slate-200 text-sm leading-relaxed">

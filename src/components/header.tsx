@@ -54,11 +54,11 @@ const Header = () => {
         <div className="fixed inset-0 z-50 flex">
           {/* Overlay */}
           <div
-            className="fixed inset-0 bg-black/40 backdrop-blur-sm transition-opacity"
+            className="fixed inset-0 bg-black/40"
             onClick={() => setMobileMenuOpen(false)}
           />
           {/* Drawer */}
-          <div className="relative bg-gradient-to-br from-cyan-100 via-white to-blue-100 w-72 max-w-[80vw] h-full shadow-2xl p-6 flex flex-col animate-slide-in-left">
+          <div className="relative bg-white w-72 max-w-[80vw] h-full shadow-2xl p-6 flex flex-col animate-slide-in-left">
             {/* Logo e fechar */}
             <div className="flex items-center justify-between mb-10">
               <Link to="/" className="flex items-center space-x-2" onClick={() => setMobileMenuOpen(false)}>

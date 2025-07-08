@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import { Spotlight } from "../components/ui/Spotlight";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -38,7 +39,9 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-3xl"></div>
-        <div className="relative container mx-auto px-4 max-w-6xl py-20">
+        {/* Spotlight decorativo no fundo */}
+        <Spotlight className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-35 w-[120%] h-[120%] pointer-events-none z-0" />
+        <div className="relative z-10 container mx-auto px-4 max-w-6xl py-20">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-7xl font-bold text-slate-100 mb-8 leading-tight">
               Seu Sorriso, 
