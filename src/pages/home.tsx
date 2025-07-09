@@ -62,7 +62,7 @@ const Home = () => {
                 />
               </span>
             </h1>
-            <p className="text-lg md:text-xl bg-gradient-to-r from-slate-500 via-slate-400 to-slate-500 bg-clip-text text-transparent drop-shadow-[0_4px_32px_rgba(34,211,238,0.15)] mb-12 leading-relaxed">
+            <p className="text-lg md:text-xl bg-gradient-to-r from-blue-400 via-cyan-700 to-blue-400 bg-clip-text text-transparent mb-12 leading-relaxed">
               Cuidamos da sua saúde bucal com excelência, tecnologia avançada e 
               atendimento humanizado. Sua confiança é nossa maior conquista.
             </p>
