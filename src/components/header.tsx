@@ -21,7 +21,8 @@ const Header = () => {
           <Link to="/" className="flex items-center space-x-3 group">
             <img src={logoDental} alt="Logo Nome Empresa" className="w-10 h-10 rounded-full" />
             <span className="text-xl font-bold transition-colors">
-              <span className="bg-gradient-to-br from-cyan-300 via-blue-600 to-cyan-200 bg-clip-text text-transparent">Nome</span> <span className="text-slate-600">Empresa</span>
+              <span className="bg-gradient-to-br from-cyan-100 via-cyan-500 to-cyan-300 bg-clip-text text-transparent">Nome</span> 
+              <span className="bg-gradient-to-r from-slate-400 via-slate-500 to-slate-700 bg-clip-text text-transparent">Empresa</span>
             </span>
           </Link>
 
@@ -31,7 +32,7 @@ const Header = () => {
               <Link
                 key={item.to}
                 to={item.to}
-                className="text-slate-700 hover:text-cyan-400 font-medium transition-colors relative group"
+                className="text-slate-600 hover:text-cyan-400 font-medium transition-colors relative group"
               >
                 {item.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-500 to-blue-600 group-hover:w-full transition-all duration-300"></span>
