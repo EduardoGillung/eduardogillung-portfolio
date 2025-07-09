@@ -62,7 +62,7 @@ const Home = () => {
                 />
               </span>
             </h1>
-            <p className="text-xl md:text-2xl bg-gradient-to-r from-slate-500 via-slate-400 to-slate-500 bg-clip-text text-transparent drop-shadow-[0_4px_32px_rgba(34,211,238,0.15)] mb-12 leading-relaxed">
+            <p className="text-lg md:text-xl bg-gradient-to-r from-slate-500 via-slate-400 to-slate-500 bg-clip-text text-transparent drop-shadow-[0_4px_32px_rgba(34,211,238,0.15)] mb-12 leading-relaxed">
               Cuidamos da sua saúde bucal com excelência, tecnologia avançada e 
               atendimento humanizado. Sua confiança é nossa maior conquista.
             </p>
@@ -89,10 +89,10 @@ const Home = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-cyan-400 mb-2">
+              <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 via-cyan-400 to-cyan-600 bg-clip-text text-transparent mb-2">
                 {stat.number}
               </div>
-              <div className="text-slate-700 font-medium">
+              <div className="bg-gradient-to-r from-slate-500 via-slate-400 to-slate-500 bg-clip-text text-transparent font-medium">
                 {stat.label}
               </div>
             </div>
@@ -103,10 +103,10 @@ const Home = () => {
       {/* Features Section */}
       <section className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-600 mb-6">
-            Nossos <span className="text-cyan-400">Serviços</span>
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-slate-500 via-slate-400 to-slate-500 bg-clip-text text-transparent mb-6">
+            Nossos <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-cyan-600 bg-clip-text text-transparent">Serviços</span>
           </h2>
-          <p className="text-xl text-slate-500 max-w-3xl mx-auto">
+          <p className="text-xl bg-gradient-to-r from-slate-500 via-slate-400 to-slate-500 bg-clip-text text-transparent max-w-3xl mx-auto">
             Oferecemos uma gama completa de tratamentos odontológicos com a mais alta 
             qualidade e tecnologia disponível no mercado.
           </p>
@@ -136,10 +136,10 @@ const Home = () => {
         <div className="container mx-auto px-4 max-w-6xl py-20">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-slate-500 mb-8">
-                Por que Escolher a <span className="text-cyan-500">Nome Empresa</span>?
+              <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-slate-500 via-slate-400 to-slate-500 bg-clip-text text-transparent mb-8">
+                Por que Escolher a <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-cyan-600 bg-clip-text text-transparent">Nome Empresa</span>?
               </h2>
-              <p className="text-xl text-slate-700 mb-8 leading-relaxed">
+              <p className="text-xl bg-gradient-to-r from-slate-500 via-slate-400 to-slate-500 bg-clip-text text-transparent mb-8 leading-relaxed">
                 Há mais de 15 anos cuidando de sorrisos com excelência. Nossa equipe 
                 é formada por profissionais experientes e comprometidos com a sua saúde bucal.
               </p>
@@ -150,7 +150,7 @@ const Home = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-cyan-700">Tecnologia de Ponta</h3>
-                    <p className="text-slate-700">Equipamentos modernos para diagnósticos precisos</p>
+                    <p className="bg-gradient-to-r from-slate-500 via-slate-400 to-slate-500 bg-clip-text text-transparent">Equipamentos modernos para diagnósticos precisos</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -159,7 +159,7 @@ const Home = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-cyan-700">Atendimento Humanizado</h3>
-                    <p className="text-slate-700">Cuidado personalizado para cada paciente</p>
+                    <p className="bg-gradient-to-r from-slate-500 via-slate-400 to-slate-500 bg-clip-text text-transparent">Cuidado personalizado para cada paciente</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -168,7 +168,7 @@ const Home = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-cyan-700">Preços Justos</h3>
-                    <p className="text-slate-700">Planos de tratamento acessíveis</p>
+                    <p className="bg-gradient-to-r from-slate-500 via-slate-400 to-slate-500 bg-clip-text text-transparent">Planos de tratamento acessíveis</p>
                   </div>
                 </div>
               </div>
@@ -189,7 +189,7 @@ const Home = () => {
 
       {/* CTA Section */}
       <section className="container mx-auto px-4 max-w-6xl">
-        <div className="bg-gradient-to-br via-blue-400 to-cyan-100 from-cyan-300 rounded-3xl p-12 md:p-16 text-center text-white shadow-xl">
+        <div className="bg-gradient-to-bl via-blue-500 to-cyan-300 from-cyan-200 rounded-3xl p-12 md:p-16 text-center text-white shadow-xl">
           <h2 className="text-4xl text-white md:text-5xl font-bold mb-6">
             Pronto para Transformar Seu Sorriso?
           </h2>
