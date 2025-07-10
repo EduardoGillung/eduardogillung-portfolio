@@ -1,5 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
+import dentistImage from "../assets/dentist-image.jpg";
+import happyFamilyImage from "../assets/happy-family.jpg";
 
 
 const Home = () => {
@@ -40,12 +42,10 @@ const Home = () => {
       {/* Hero Section */}
 
         <div className="relative z-10 container mx-auto px-4 max-w-6xl py-20">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r
-             from-blue-400 via-cyan-400 to-cyan-600 
-             bg-clip-text text-transparent drop-shadow-[0_4px_32px_rgba(34,211,238,0.25)] mb-8 leading-tight">
+          <div className="text-center max-w-6xl mx-auto">
+            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-400 via-cyan-400 to-cyan-600 bg-clip-text text-transparent mb-12 leading-tight">
               Seu Sorriso,
-              <span className="block font-extrabold tracking-tight bg-gradient-to-r from-blue-400 via-cyan-400 to-cyan-600 bg-clip-text text-transparent">
+              <span className="block font-extrabold tracking-tight bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-500 bg-clip-text text-transparent">
                 Nossa{' '}
                 <TypeAnimation
                   sequence={[
@@ -62,7 +62,8 @@ const Home = () => {
                 />
               </span>
             </h1>
-            <p className="text-lg md:text-xl bg-gradient-to-r from-blue-400 via-cyan-700 to-blue-400 bg-clip-text text-transparent mb-12 leading-relaxed">
+            <p className="text-lg md:text-xl bg-gradient-to-r from-cyan-900 via-cyan-800 to-cyan-600 bg-clip-text text-transparent mb-12 leading-relaxed">
+
               Cuidamos da sua saúde bucal com excelência, tecnologia avançada e 
               atendimento humanizado. Sua confiança é nossa maior conquista.
             </p>
@@ -103,7 +104,7 @@ const Home = () => {
       {/* Features Section */}
       <section className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-slate-500 via-slate-400 to-slate-500 bg-clip-text text-transparent mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-slate-700 to-slate-500 bg-clip-text text-transparent mb-6">
             Nossos <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-cyan-600 bg-clip-text text-transparent">Serviços</span>
           </h2>
           <p className="text-xl bg-gradient-to-r from-slate-500 via-slate-400 to-slate-500 bg-clip-text text-transparent max-w-3xl mx-auto">
@@ -115,14 +116,14 @@ const Home = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <div key={index} className="group">
-              <div className="bg-gradient-to-b from-blue-500 via-blue-300 to-cyan-500 rounded-3xl p-8 shadow-lg  hover:shadow-xl transition-all duration-300 group-hover:border-cyan-500/30">
+              <div className="bg-gradient-to-br via-blue-200 to-white from-cyan-300  rounded-3xl p-8 shadow-lg  hover:shadow-xl transition-all duration-300 group-hover:border-cyan-500/30">
                 <div className="text-5xl mb-6 group-hover:scale-110 transition-transform">
                   {feature.icon}
                 </div>
-                <h3 className="text-xl font-bold text-slate-100 mb-4">
+                <h3 className="text-xl font-bold bg-gradient-to-r from-blue-800 via-cyan-500 to-blue-900 bg-clip-text text-transparent mb-4">
                   {feature.title}
                 </h3>
-                <p className="text-cyan-50 leading-relaxed">
+                <p className="text-cyan-900 leading-relaxed">
                   {feature.description}
                 </p>
               </div>
@@ -136,10 +137,10 @@ const Home = () => {
         <div className="container mx-auto px-4 max-w-6xl py-20">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-slate-500 via-slate-400 to-slate-500 bg-clip-text text-transparent mb-8">
-                Por que Escolher a <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-cyan-600 bg-clip-text text-transparent">Nome Empresa</span>?
+              <h2 className="text-4xl md:text-5xl font-bold mb-8">
+                <span className="bg-gradient-to-r from-slate-700 to-slate-500 bg-clip-text text-transparent">Por que Escolher a </span><span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-cyan-600 bg-clip-text text-transparent">Nome Empresa?</span>
               </h2>
-              <p className="text-xl bg-gradient-to-r from-slate-500 via-slate-400 to-slate-500 bg-clip-text text-transparent mb-8 leading-relaxed">
+              <p className="text-xl bg-gradient-to-r from-slate-600 via-slate-400 to-slate-600 bg-clip-text text-transparent mb-8 leading-relaxed">
                 Há mais de 15 anos cuidando de sorrisos com excelência. Nossa equipe 
                 é formada por profissionais experientes e comprometidos com a sua saúde bucal.
               </p>
@@ -149,7 +150,7 @@ const Home = () => {
                     <span className="text-cyan-400 text-xl">✓</span>
                   </div>
                   <div>
-                    <h3 className="font-bold text-cyan-700">Tecnologia de Ponta</h3>
+                    <span className="font-bold bg-gradient-to-r from-blue-600 via-cyan-400 to-cyan-600 bg-clip-text text-transparent">Tecnologia de Ponta</span>
                     <p className="bg-gradient-to-r from-slate-500 via-slate-400 to-slate-500 bg-clip-text text-transparent">Equipamentos modernos para diagnósticos precisos</p>
                   </div>
                 </div>
@@ -158,7 +159,7 @@ const Home = () => {
                     <span className="text-cyan-400 text-xl">✓</span>
                   </div>
                   <div>
-                    <h3 className="font-bold text-cyan-700">Atendimento Humanizado</h3>
+                  <span className="font-bold bg-gradient-to-r from-blue-600 via-cyan-400 to-cyan-600 bg-clip-text text-transparent">Atendimento Humanizado</span>
                     <p className="bg-gradient-to-r from-slate-500 via-slate-400 to-slate-500 bg-clip-text text-transparent">Cuidado personalizado para cada paciente</p>
                   </div>
                 </div>
@@ -167,43 +168,66 @@ const Home = () => {
                     <span className="text-cyan-400 text-xl">✓</span>
                   </div>
                   <div>
-                    <h3 className="font-bold text-cyan-700">Preços Justos</h3>
+                    <h3 className="font-bold bg-gradient-to-r from-blue-600 via-cyan-400 to-cyan-600 bg-clip-text text-transparent">Preços Justos</h3>
                     <p className="bg-gradient-to-r from-slate-500 via-slate-400 to-slate-500 bg-clip-text text-transparent">Planos de tratamento acessíveis</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="relative">
-              <div className="bg-gradient-to-br via-blue-400 to-cyan-100 from-cyan-300 rounded-2xl p-12 text-white text-center shadow-xl">
-                <div className="text-6xl mb-6">🦷</div>
-                <h3 className="text-2xl font-bold mb-4 text-white">Sua Saúde Bucal em Primeiro Lugar</h3>
-                <p className="text-white leading-relaxed">
-                  Cuidamos de você e de toda sua família com o mesmo carinho e 
-                  profissionalismo que dedicamos aos nossos próprios familiares.
-                </p>
+            <div
+              className="relative rounded-2xl overflow-hidden shadow-xl mx-auto w-full max-w-lg sm:max-w-2xl md:max-w-4xl lg:max-w-5xl min-h-[18rem] sm:min-h-[22rem] md:min-h-[28rem] lg:min-h-[32rem]"
+            >
+              <img
+                src={dentistImage}
+                alt="Dentista cuidando de paciente"
+                className="w-full h-[18rem] sm:h-[22rem] md:h-[28rem] lg:h-[32rem] object-cover"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 60vw"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 flex flex-col items-center justify-end px-2 sm:px-8 pb-8 md:pb-12">
+                <div className="absolute bottom-0 left-0 w-full h-1/2 pointer-events-none bg-gradient-to-t from-black/60 via-black/60 to-transparent" />
+                <div className="relative z-10 flex flex-col items-center w-full">
+                  <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-b from-slate-50 via-cyan-100 to-blue-200 bg-clip-text text-transparent drop-shadow mb-2 text-center">Sua Saúde Bucal em Primeiro Lugar</h3>
+                  <p className="bg-gradient-to-b from-slate-100 via-slate-200 to-slate-300 bg-clip-text text-transparent leading-relaxed max-w-md text-center drop-shadow">
+                    Cuidamos de você e de toda sua família com o mesmo carinho e profissionalismo que dedicamos aos nossos próprios familiares.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA Section - agora com imagem de fundo e textos sobrepostos */}
       <section className="container mx-auto px-4 max-w-6xl">
-        <div className="bg-gradient-to-bl via-blue-500 to-cyan-300 from-cyan-200 rounded-3xl p-12 md:p-16 text-center text-white shadow-xl">
-          <h2 className="text-4xl text-white md:text-5xl font-bold mb-6">
-            Pronto para Transformar Seu Sorriso?
-          </h2>
-          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Agende sua consulta hoje mesmo e descubra como podemos ajudar você 
-            a ter um sorriso mais bonito e saudável.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="gradient bg-white text-cyan-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-100 transition-colors">
-              Agendar Consulta
-            </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-cyan-600 transition-colors">
-              Falar com Especialista
-            </button>
+        <div className="relative rounded-2xl overflow-hidden shadow-xl mx-auto w-full max-w-lg sm:max-w-2xl md:max-w-4xl lg:max-w-5xl min-h-[18rem] sm:min-h-[22rem] md:min-h-[28rem] lg:min-h-[32rem]">
+          <img
+            src={happyFamilyImage}
+            alt="Família feliz sorrindo"
+            className="w-full h-[18rem] sm:h-[22rem] md:h-[28rem] lg:h-[32rem] object-cover"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 60vw"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 flex flex-col items-center justify-end px-2 sm:px-8 pb-8 md:pb-12">
+            <div className="absolute bottom-0 left-0 w-full h-1/2 pointer-events-none bg-gradient-to-t from-black/60 via-black/60 to-transparent" />
+            <div className="relative z-10 flex flex-col items-center w-full">
+              <h2 className="text-4xl text-white md:text-5xl font-bold mb-6">Pronto para Transformar Seu Sorriso?</h2>
+              <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto text-white">
+                Agende sua consulta hoje mesmo e descubra como podemos ajudar você 
+                a ter um sorriso mais bonito e saudável.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <button className="gradient bg-white px-8 py-4 rounded-xl font-bold text-lg transition-colors hover:bg-transparent hover:border-2 hover:border-white">
+                  <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-cyan-600 bg-clip-text text-transparent transition-colors hover:text-white">Agendar Consulta</span>
+                </button>
+                <button
+                  className="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-cyan-600 transition-colors"
+                  onClick={() => navigate('/contact')}
+                >
+                  Falar com Especialista
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>

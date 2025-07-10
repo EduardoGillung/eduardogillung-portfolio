@@ -9,7 +9,6 @@ interface Props {
 const MainLayout = ({ children }: Props) => {
   return (
     <div className="min-h-screen flex flex-col relative">
-      {/* Wavy background global mais intenso e animado */}
       <div className="absolute inset-0 -z-10 w-full h-full">
         <WavyBackground
           colors={["#f8fafc", "#f8fafc", "#DFF9FF", "#92EBFF", "#92EBFF"]}
@@ -18,7 +17,7 @@ const MainLayout = ({ children }: Props) => {
           speed="fast"
           waveOpacity={0.30}
           containerClassName="w-full h-full"
-          className="w-full h-full"
+          className="w-full h-full -translate-y-15"
         />
       </div>
       <Header />

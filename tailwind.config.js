@@ -8,13 +8,14 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#183690', // Azul principal
-          light: '#3553b3',  // Azul claro
-          dark: '#0f1e4d',   // Azul escuro
+          DEFAULT: '#004EB4', // Azul principal
+          light: '#CCE2FF',  // Azul claro
+          dark: '#002C66',   // Azul escuro
         },
         secondary: {
-          DEFAULT: '#06b6d4', // Ciano para destaques
-          dark: '#0891b2',
+          DEFAULT: '#00DAA7',
+          light: '#A2F4FF', 
+          dark: '#003846',
         },
         tertiary: {
           DEFAULT: '#1FCB8C',
