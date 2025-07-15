@@ -1,3 +1,5 @@
+import bodyHero from "../assets/body-hero.jpg";
+
 const AboutUs = () => {
   const services = [
     {
@@ -73,15 +75,26 @@ const AboutUs = () => {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="text-center py-12 bg-gradient-to-br from-blue-500 via-slate-200 to-cyan-500 rounded-3xl">
-        <div className="max-w-4xl mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-100 mb-6">
-            Sua Saúde Bucal em <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Primeiro Lugar</span>
-          </h1>
-          <p className="text-xl text-slate-700 mb-8 leading-relaxed">
-            Há mais de 15 anos cuidando de sorrisos com excelência, tecnologia de ponta e 
-            atendimento humanizado. Sua confiança é nossa maior conquista.
-          </p>
+      <section className="py-12">
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+          <div className="flex-1">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#042A4C] mb-6 text-left max-w-xl">
+              Sua Saúde Bucal em <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 ">Primeiro Lugar</span>
+            </h1>
+            <p className="text-xl text-slate-700 mb-8 leading-relaxed max-w-xl">
+              Há mais de 15 anos cuidando de sorrisos com excelência, tecnologia de ponta e 
+              atendimento humanizado. Sua confiança é nossa maior conquista.
+            </p>
+          </div>
+          <div className="flex-shrink-0 w-full md:w-80 lg:w-96">
+            <img 
+              src={bodyHero} 
+              alt="Equipe de dentistas" 
+              className="rounded-3xl w-full h-auto object-cover shadow-lg"
+              loading="lazy"
+            />
+          </div>
+        </div>
           <div className="flex flex-wrap justify-center gap-6 text-slate-700">
             <div className="flex items-center space-x-2">
               <span className="text-2xl">👨‍⚕️</span>
@@ -96,7 +109,6 @@ const AboutUs = () => {
               <span className="font-medium">4.9/5 Avaliação</span>
             </div>
           </div>
-        </div>
       </section>
 
       {/* Missão e Valores */}

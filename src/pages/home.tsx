@@ -188,7 +188,7 @@ const Home = () => {
                 <div className="absolute bottom-0 left-0 w-full h-1/2 pointer-events-none bg-gradient-to-t from-black/60 via-black/60 to-transparent" />
                 <div className="relative z-10 flex flex-col items-center w-full">
                   <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-slate-100 to-slate-200 bg-clip-text text-transparent drop-shadow mb-2 text-center">Sua Saúde Bucal em Primeiro Lugar</h3>
-                  <p className="bg-gradient-to-b from-slate-100 to-slate-300 bg-clip-text text-transparent leading-relaxed max-w-md text-center drop-shadow">
+                  <p className="font-semibold bg-gradient-to-b from-slate-100 to-slate-200 bg-clip-text text-transparent leading-relaxed max-w-md text-center drop-shadow">
                     Cuidamos de você e de toda sua família com o mesmo carinho e profissionalismo que dedicamos aos nossos próprios familiares.
                   </p>
                 </div>

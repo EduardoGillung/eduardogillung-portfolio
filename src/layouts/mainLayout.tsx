@@ -7,7 +7,7 @@ interface Props {
 
 const MainLayout = ({ children }: Props) => {
   return (
-    <div className="min-h-screen flex flex-col relative">
+    <div className="min-h-screen flex flex-col relative pt-24">
       <div className="absolute inset-0 -z-10 w-full h-full">
      
       </div>
