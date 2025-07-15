@@ -42,6 +42,9 @@ module.exports = {
           DEFAULT: '#cbd5e1', // Bordas
           dark: '#334155',
         },
+        'dark-blue': '#80A7FA',
+        'primary-cyan': '#15D7E8',
+        'secondary-cyan': '#0B363C',
       },
       animation: {
         'star-movement-bottom': 'star-movement-bottom 4s linear infinite alternate',
