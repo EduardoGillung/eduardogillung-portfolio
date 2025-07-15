@@ -96,9 +96,9 @@ const Contact = () => {
         onClose={() => setShowNotification(false)}
       />
       {/* Hero Section */}
-      <section className="text-center py-12 bg-gradient-to-br from-blue-500 via-white to-cyan-500 rounded-3xl">
+      <section className="text-center py-12">
         <div className="max-w-4xl mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-100 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-slate-600 mb-6">
             Entre em <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Contato conosco</span>
           </h1>
           <p className="text-xl text-slate-700 mb-8 leading-relaxed">
