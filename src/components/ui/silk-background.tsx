@@ -79,9 +79,12 @@ void main() {
                                    0.02 * tOffset) +
                            sin(20.0 * (tex.x + tex.y - 0.1 * tOffset)));
 
-  vec4 col = vec4(uColor, 1.0) * vec4(pattern) - rnd / 15.0 * uNoiseIntensity;
-  col.a = 1.0;
-  gl_FragColor = col;
+  // Fundo branco
+  vec3 base = vec3(1.0, 1.0, 1.0);
+  // Silk azul claro como blend
+  float intensity = clamp(pattern * uNoiseIntensity * 0.5, 0.0, 1.0);
+  vec3 finalColor = mix(base, uColor, intensity);
+  gl_FragColor = vec4(finalColor, 1.0);
 }
 `;
 

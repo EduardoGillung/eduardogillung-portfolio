@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
 import dentistImage from "../assets/dentist-image.jpg";
 import happyFamilyImage from "../assets/happy-family.jpg";
+import FadeContent from "../components/ui/fadeContent";
 
 
 const Home = () => {
@@ -38,8 +39,9 @@ const Home = () => {
   ];
 
   return (
-    <div className="space-y-24 source-sans">
-      {/* Hero Section */}
+    <FadeContent duration={900} easing="ease-out" initialOpacity={0}>
+      <div className="space-y-24 source-sans">
+        {/* Hero Section */}
 
         <div className="relative z-10 container mx-auto px-4 max-w-6xl py-6">
           <div className="text-center max-w-6xl mx-auto">
@@ -69,16 +71,20 @@ const Home = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
-                className="bg-gradient-to-br from-cyan-200 via-white to-cyan-50 rounded-3xl font-bold text-lg px-8 py-4 transition-all duration-300 shadow-lg hover:shadow-xl hover:from-[#22d3ee] hover:via-[#f1f5f9] hover:to-[#f8fafc] hover:scale-105 hover:ring-2 hover:ring-[#22d3ee] focus:outline-none focus:ring-2 focus:ring-[#22d3ee] drop-shadow-[0_2px_8px_rgba(34,140,255,0.35)]"
+                className="group bg-gradient-to-r from-[#042A4C] to-[#00DAA7] rounded-3xl font-semibold text-lg px-8 py-4 transition-all duration-300 shadow-lg hover:shadow-xl hover:from-[#22d3ee] hover:via-[#f1f5f9] hover:to-[#f8fafc] hover:scale-105 hover:ring-2 hover:ring-[#CCE2FF] focus:outline-none focus:ring-2 focus:ring-[#22d3ee] drop-shadow-[0_2px_8px_rgba(34,140,255,0.35)]"
                 onClick={() => navigate('/contact')}
               >
-                <span className="bg-gradient-to-r from-[#042A4C] to-[#2A99E7] bg-clip-text text-transparent">Agendar Consulta</span>
+                <span
+                  className="text-white shiny-text-white transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#042A4C] group-hover:to-[#00DAA7] group-hover:bg-clip-text group-hover:text-transparent hover:text-[#00DAA7]"
+                >
+                  Entrar em contato
+                </span>
               </button>
               <button
-                className="bg-gradient-to-br from-cyan-200 via-white to-cyan-50 rounded-3xl font-bold text-lg px-8 py-4 transition-all duration-300 shadow-lg hover:shadow-xl hover:from-[#22d3ee] hover:via-[#f1f5f9] hover:to-[#f8fafc] hover:scale-105 hover:ring-2 hover:ring-[#22d3ee] focus:outline-none focus:ring-2 focus:ring-[#22d3ee] drop-shadow-[0_2px_8px_rgba(34,140,255,0.35)]"
+                className="bg-gradient-to-br from-cyan-200 via-white to-cyan-50 rounded-3xl font-semibold text-lg px-8 py-4 transition-all duration-300 shadow-lg hover:shadow-xl hover:from-[#22d3ee] hover:via-[#f1f5f9] hover:to-[#f8fafc] hover:scale-105 hover:ring-2 hover:ring-[#CCE2FF] focus:outline-none focus:ring-2 focus:ring-[#22d3ee] drop-shadow-[0_2px_8px_rgba(34,140,255,0.35)]"
                 onClick={() => navigate('/aboutUs')}
               >
-                <span className="bg-gradient-to-r from-[#042A4C] to-[#2A99E7] bg-clip-text text-transparent">Sobre nós</span>
+                <span className="bg-gradient-to-r from-[#042A4C] to-[#00DAA7] bg-clip-text text-transparent shiny-text">Sobre nós</span>
               </button>
             </div>
           </div>
@@ -116,14 +122,14 @@ const Home = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <div key={index} className="group">
-              <div className="bg-gradient-to-t from-blue-100 via-white to-blue-300 rounded-3xl p-8 shadow-lg  hover:shadow-xl transition-all duration-300 group-hover:border-cyan-500/30">
+              <div className="bg-white rounded-3xl p-8 shadow-lg  hover:shadow-xl transition-all duration-300 group-hover:border-cyan-500/30">
                 <div className="text-5xl mb-6 group-hover:scale-110 transition-transform">
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-bold text-[#042A4C] mb-4">
                   {feature.title}
                 </h3>
-                <p className="bg-gradient-to-t from-[#042A4C] to-[#2A99E7] bg-clip-text text-transparent">
+                <p className="bg-gradient-to-t from-[#2A99E7] to-[#2A99E7] bg-clip-text text-transparent">
                   {feature.description}
                 </p>
               </div>
@@ -217,8 +223,8 @@ const Home = () => {
                 a ter um sorriso mais bonito e saudável.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="gradient bg-white px-8 py-4 rounded-xl font-bold text-lg transition-colors hover:bg-transparent hover:border-2 hover:border-white">
-                  <span className="bg-gradient-to-t from-[#042A4C] to-[#2A99E7] bg-clip-text text-transparent transition-colors hover:text-white">Agendar Consulta</span>
+                <button className="group bg-white px-8 py-4 rounded-xl font-bold text-lg transition-colors hover:bg-gradient-to-t hover:from-[#042A4C] hover:to-[#2A99E7] hover:border-2 hover:border-white">
+                  <span className="bg-gradient-to-t from-[#042A4C] to-[#2A99E7] bg-clip-text text-transparent transition-colors group-hover:text-white hover:text-[#00DAA7]">Entrar em contato</span>
                 </button>
                 <button
                   className="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-cyan-600 transition-colors"
@@ -232,6 +238,7 @@ const Home = () => {
         </div>
       </section>
     </div>
+    </FadeContent>
   );
 };
 
