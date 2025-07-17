@@ -98,7 +98,7 @@ const Contact = () => {
           onClose={() => setShowNotification(false)}
         />
         {/* Hero Section */}
-        <section className="text-center py-12">
+        <section className="text-center py-">
           <div className="max-w-4xl mx-auto px-4">
             <h1 className="text-4xl md:text-5xl font-bold text-[#042A4C] mb-6">
               Entre em <span className="text-transparent bg-clip-text bg-gradient-to-t from-[#00DAA7] to-[#2A99E7]">Contato conosco</span>
@@ -107,20 +107,6 @@ const Contact = () => {
               Estamos aqui para ajudar você! Entre em contato conosco para agendar sua consulta, 
               tirar dúvidas ou solicitar um orçamento personalizado.
             </p>
-            <div className="flex flex-wrap justify-center gap-6 text-[#2A99E7]">
-              <div className="flex items-center space-x-2">
-                <span className="text-2xl">⚡</span>
-                <span className="font-medium">Resposta em até 24h</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <span className="text-2xl">💬</span>
-                <span className="font-medium">Atendimento Personalizado</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <span className="text-2xl">🎯</span>
-                <span className="font-medium">Soluções Específicas</span>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -259,24 +245,7 @@ const Contact = () => {
           </div>
         </section>
 
-        {/* Mapa e Localização */}
-        <section className="bg-white rounded-3xl p-8 border-1 border-slate-200 drop-shadow-2xl">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-[#042A4C] mb-4">
-              Nossa <span className="text-transparent bg-clip-text bg-gradient-to-t from-[#00DAA7] to-[#2A99E7]">Localização</span>
-            </h2>
-            <p className="text-lg text-slate-500">
-              Venha nos visitar! Estamos localizados em uma região de fácil acesso com estacionamento gratuito.
-            </p>
-          </div>
-          <div className="bg-white rounded-3xl p-6">
-            <div className="rounded-lg flex items-center justify-center">    
-                <p className="text-2xl text-[#042A4C] drop-shadow-2xl">Rua das Flores, 123 - Vila Madalena, São Paulo/SP</p>
-            </div>
-            
-          </div>
-        </section>
-
+        
         {/* FAQ Rápido */}
         <section>
           <div className="text-center mb-8">

@@ -1,7 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
 import dentistImage from "../assets/dentist-image.jpg";
-import happyFamilyImage from "../assets/happy-family.jpg";
 import FadeContent from "../components/ui/fadeContent";
 
 
@@ -208,16 +207,9 @@ const Home = () => {
 
       {/* CTA Section - agora com imagem de fundo e textos sobrepostos */}
       <section className="container mx-auto px-4 max-w-6xl">
-        <div className="relative rounded-2xl overflow-hidden shadow-xl mx-auto w-full max-w-lg sm:max-w-2xl md:max-w-4xl lg:max-w-5xl min-h-[18rem] sm:min-h-[22rem] md:min-h-[28rem] lg:min-h-[32rem]">
-          <img
-            src={happyFamilyImage}
-            alt="Família feliz sorrindo"
-            className="w-full h-[18rem] sm:h-[22rem] md:h-[28rem] lg:h-[32rem] object-cover"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 60vw"
-            loading="lazy"
-          />
+        <div className="relative rounded-2xl overflow-hidden shadow-xl mx-auto w-full max-w-lg sm:max-w-2xl md:max-w-4xl lg:max-w-5xl min-h-[18rem] sm:min-h-[22rem]">
           <div className="absolute inset-0 flex flex-col items-center justify-end px-2 sm:px-8 pb-8 md:pb-12">
-            <div className="absolute bottom-0 left-0 w-full h-1/2 pointer-events-none bg-gradient-to-t from-black/60 via-black/60 to-transparent" />
+            <div className="absolute bottom-0 left-0 w-full h-full pointer-events-none bg-gradient-to-br via-[#2A99E7] to-[#00DAA7] from-[#042A4C]" />
             <div className="relative z-10 flex flex-col items-center w-full">
               <h2 className="text-4xl text-white md:text-5xl font-bold mb-6">Pronto para Transformar Seu Sorriso?</h2>
               <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto text-white">
@@ -226,7 +218,8 @@ const Home = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button className="group bg-white px-8 py-4 rounded-xl font-bold text-lg transition-colors hover:bg-gradient-to-t hover:from-[#042A4C] hover:to-[#2A99E7] hover:border-2 hover:border-white">
-                  <span className="bg-gradient-to-t from-[#042A4C] to-[#2A99E7] bg-clip-text text-transparent transition-colors group-hover:text-white hover:text-[#00DAA7]">Entrar em contato</span>
+                  <span className="bg-gradient-to-t from-[#042A4C] to-[#2A99E7] bg-clip-text text-transparent transition-colors group-hover:text-white hover:text-[#00DAA7]"
+                  >Entrar em contato</span>
                 </button>
                 <button
                   className="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-cyan-600 transition-colors"

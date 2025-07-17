@@ -24,9 +24,8 @@ const Footer = () => {
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-3 group">
               <img src={logoDental} alt="Logo Dental Solutions" className="w-8 h-8 rounded-full" />
-              <span className="text-lg font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors">
-                Nome Empresa
-              </span>
+              <span className="bg-gradient-to-t from-[#00DAA7] to-[#00E1FF] bg-clip-text text-transparent font-semibold">Nome</span> 
+              <span className="text-cyan-50 font-semibold">Empresa</span>
             </Link>
             <p className="text-slate-200 text-sm leading-relaxed">
               Cuidando do seu sorriso com tecnologia de ponta e profissionais experientes. 
