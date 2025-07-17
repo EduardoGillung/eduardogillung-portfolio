@@ -71,17 +71,19 @@ const Home = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
-                className="group bg-gradient-to-r from-[#042A4C] to-[#00DAA7] rounded-3xl font-semibold text-lg px-8 py-4 transition-all duration-300 shadow-lg hover:shadow-xl hover:from-[#22d3ee] hover:via-[#f1f5f9] hover:to-[#f8fafc] hover:scale-105 hover:ring-2 hover:ring-[#CCE2FF] focus:outline-none focus:ring-2 focus:ring-[#22d3ee] drop-shadow-[0_2px_8px_rgba(34,140,255,0.35)]"
+                className="group bg-gradient-to-r from-[#042A4C] to-[#00DAA7] rounded-3xl font-semibold text-lg px-8 py-4 transition-all duration-300
+                shadow-lg hover:shadow-xl hover:from-[#2A99E7] hover:via-[#00DAA7] hover:to-[#042A4C] hover:scale-105 hover:ring-1 hover:ring-[#00DAA7] focus:outline-none focus:ring-2 focus:ring-[#2A99E7] drop-shadow-[0_2px_8px_rgba(34,140,255,0.35)]"
                 onClick={() => navigate('/contact')}
               >
                 <span
-                  className="text-white shiny-text-white transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#042A4C] group-hover:to-[#00DAA7] group-hover:bg-clip-text group-hover:text-transparent hover:text-[#00DAA7]"
+                  className="shiny-text-white transition-all duration-300 hover:!text-slate-300"
                 >
                   Entrar em contato
                 </span>
               </button>
               <button
-                className="bg-gradient-to-br from-cyan-200 via-white to-cyan-50 rounded-3xl font-semibold text-lg px-8 py-4 transition-all duration-300 shadow-lg hover:shadow-xl hover:from-[#22d3ee] hover:via-[#f1f5f9] hover:to-[#f8fafc] hover:scale-105 hover:ring-2 hover:ring-[#CCE2FF] focus:outline-none focus:ring-2 focus:ring-[#22d3ee] drop-shadow-[0_2px_8px_rgba(34,140,255,0.35)]"
+                className="bg-gradient-to-br from-cyan-200 via-white to-cyan-50 rounded-3xl font-semibold text-lg px-8 py-4 transition-all duration-300
+                shadow-lg hover:shadow-xl hover:from-[#22d3ee] hover:via-[#f1f5f9] hover:to-[#f8fafc] hover:scale-105 hover:ring-2 hover:ring-[#CCE2FF] focus:outline-none focus:ring-2 focus:ring-[#22d3ee] drop-shadow-[0_2px_8px_rgba(34,140,255,0.35)]"
                 onClick={() => navigate('/aboutUs')}
               >
                 <span className="bg-gradient-to-r from-[#042A4C] to-[#00DAA7] bg-clip-text text-transparent shiny-text">Sobre nós</span>

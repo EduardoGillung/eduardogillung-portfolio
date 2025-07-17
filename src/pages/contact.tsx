@@ -100,14 +100,14 @@ const Contact = () => {
         {/* Hero Section */}
         <section className="text-center py-12">
           <div className="max-w-4xl mx-auto px-4">
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-600 mb-6">
-              Entre em <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Contato conosco</span>
+            <h1 className="text-4xl md:text-5xl font-bold text-[#042A4C] mb-6">
+              Entre em <span className="text-transparent bg-clip-text bg-gradient-to-t from-[#00DAA7] to-[#2A99E7]">Contato conosco</span>
             </h1>
-            <p className="text-xl text-slate-700 mb-8 leading-relaxed">
+            <p className="text-xl text-slate-500 mb-8 leading-relaxed">
               Estamos aqui para ajudar você! Entre em contato conosco para agendar sua consulta, 
               tirar dúvidas ou solicitar um orçamento personalizado.
             </p>
-            <div className="flex flex-wrap justify-center gap-6 text-slate-700">
+            <div className="flex flex-wrap justify-center gap-6 text-[#2A99E7]">
               <div className="flex items-center space-x-2">
                 <span className="text-2xl">⚡</span>
                 <span className="font-medium">Resposta em até 24h</span>
@@ -127,15 +127,15 @@ const Contact = () => {
         {/* Formulário e Informações */}
         <section className="grid lg:grid-cols-2 gap-12">
           {/* Formulário de Contato */}
-          <div className="bg-gradient-to-br via-blue-500 to-cyan-200 from-cyan-400/70 rounded-2xl p-8 text-white shadow-xl border-slate-100">
-            <h2 className="text-2xl font-bold text-slate-100 mb-6">
-              Envie sua <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 to-white">Mensagem</span>
+          <div className="bg-white border border-slate-200 rounded-3xl p-8 drop-shadow-2xl">
+            <h2 className="text-2xl font-bold text-[#042A4C] mb-6">
+              Envie sua <span className="text-transparent bg-clip-text bg-[#042A4C]">Mensagem</span>
             </h2>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-slate-500 mb-2">
                     Nome Completo *
                   </label>
                   <input
@@ -145,12 +145,12 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-cyan-200 rounded-lg focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 transition-colors bg-slate-50 text-slate-700 placeholder-slate-400"
+                    className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-slate-200 focus:border-slate-200 transition-colors bg-slate-50 text-slate-700 placeholder-slate-400"
                     placeholder="Seu nome completo"
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-slate-500 mb-2">
                     Email *
                   </label>
                   <input
@@ -160,7 +160,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-cyan-200 rounded-lg focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 transition-colors bg-slate-50 text-slate-700 placeholder-slate-400"
+                    className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-slate-200 focus:border-slate-200 transition-colors bg-slate-50 text-slate-700 placeholder-slate-400"
                     placeholder="seu@email.com"
                   />
                 </div>
@@ -168,7 +168,7 @@ const Contact = () => {
 
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-white mb-2">
+                  <label htmlFor="phone" className="block text-sm font-medium text-slate-500 mb-2">
                     Telefone
                   </label>
                   <input
@@ -177,12 +177,12 @@ const Contact = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-cyan-200 rounded-lg focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 transition-colors bg-slate-50 text-slate-700 placeholder-slate-400"
+                    className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-slate-200 focus:border-slate-200 transition-colors bg-slate-50 text-slate-700 placeholder-slate-400"
                     placeholder="(11) 99999-9999"
                   />
                 </div>
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-white mb-2">
+                  <label htmlFor="subject" className="block text-sm font-medium text-slate-500 mb-2">
                     Assunto
                   </label>
                   <select
@@ -190,7 +190,7 @@ const Contact = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-cyan-200 rounded-lg focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 transition-colors bg-slate-50 text-slate-700"
+                    className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-slate-200 focus:border-slate-200 transition-colors bg-slate-50 text-slate-700"
                   >
                     <option value="">Selecione um assunto</option>
                     <option value="agendamento">Agendamento de Consulta</option>
@@ -203,7 +203,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-white mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-sl mb-2">
                   Mensagem *
                 </label>
                 <textarea
@@ -213,7 +213,7 @@ const Contact = () => {
                   onChange={handleInputChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 border border-cyan-200 rounded-lg focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 transition-colors resize-none bg-slate-50 text-slate-700 placeholder-slate-400"
+                  className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-slate-200 focus:border-slate-200 transition-colors resize-none bg-slate-50 text-slate-700 placeholder-slate-400"
                   placeholder="Descreva sua necessidade ou dúvida..."
                 />
               </div>
@@ -231,8 +231,8 @@ const Contact = () => {
           {/* Informações de Contato */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-2xl font-bold text-slate-500 mb-6">
-                Informações de <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Contato</span>
+              <h2 className="text-2xl font-bold text-[#042A4C] mb-6">
+                Informações de <span className="text-transparent bg-clip-text bg-gradient-to-t from-[#00DAA7] to-[#2A99E7]">Contato</span>
               </h2>
               <p className="text-slate-500 mb-8">
                 Escolha a forma mais conveniente para entrar em contato conosco. 
@@ -240,18 +240,18 @@ const Contact = () => {
               </p>
             </div>
 
-            <div className="space-y-6">
+            <div className="bg-white rounded-3xl p-8 shadow-md flex flex-col gap-6">
               {contactMethods.map((method) => (
-                <div key={method.title} className="bg-gradient-to-br via-blue-400 to-cyan-300 from-blue-400 rounded-3xl p-6 flex items-start space-x-4 shadow-md">
-                  <span className="text-3xl">{method.icon}</span>
+                <div key={method.title} className="flex items-start gap-4 border-b last:border-b-0 border-slate-100 pb-6 last:pb-0">
+                  <span className="text-3xl flex-shrink-0">{method.icon}</span>
                   <div>
-                    <h3 className="text-lg font-bold text-white mb-1">{method.title}</h3>
-                    <div className="text-slate-100 text-sm">
+                    <h3 className="text-lg font-bold text-[#042A4C] mb-1">{method.title}</h3>
+                    <div className="text-slate-500 text-sm">
                       {method.details.map((detail, i) => (
                         <div key={i}>{detail}</div>
                       ))}
                     </div>
-                    <div className="text-cyan-100 text-xs mt-2">{method.description}</div>
+                    <div className="text-[#2A99E7] text-xs mt-2">{method.description}</div>
                   </div>
                 </div>
               ))}
@@ -260,22 +260,18 @@ const Contact = () => {
         </section>
 
         {/* Mapa e Localização */}
-        <section className="bg-gradient-to-br via-blue-500 to-cyan-300 from-blue-400 rounded-3xl p-8">
+        <section className="bg-white rounded-3xl p-8 border-1 border-slate-200 drop-shadow-2xl">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-slate-100 mb-4">
-              Nossa <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 to-blue-100">Localização</span>
+            <h2 className="text-3xl font-bold text-[#042A4C] mb-4">
+              Nossa <span className="text-transparent bg-clip-text bg-gradient-to-t from-[#00DAA7] to-[#2A99E7]">Localização</span>
             </h2>
-            <p className="text-lg text-white">
+            <p className="text-lg text-slate-500">
               Venha nos visitar! Estamos localizados em uma região de fácil acesso com estacionamento gratuito.
             </p>
           </div>
-          <div className="bg-gradient-to-br via-blue-500 to-cyan-300 from-blue-400 rounded-3xl p-6 shadow-lg border border-slate-100">
-            <div className="aspect-video bg-slate-700/50 rounded-lg flex items-center justify-center">
-              <div className="text-center">
-                <span className="text-4xl mb-4 block">🗺️</span>
-                <p className="text-slate-100 font-medium">Mapa Interativo</p>
-                <p className="text-sm text-slate-100">Rua das Flores, 123 - Vila Madalena, São Paulo/SP</p>
-              </div>
+          <div className="bg-white rounded-3xl p-6">
+            <div className="rounded-lg flex items-center justify-center">    
+                <p className="text-2xl text-[#042A4C] drop-shadow-2xl">Rua das Flores, 123 - Vila Madalena, São Paulo/SP</p>
             </div>
             
           </div>
@@ -284,16 +280,16 @@ const Contact = () => {
         {/* FAQ Rápido */}
         <section>
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-slate-500 mb-4">
-              Perguntas <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Frequentes</span>
+            <h2 className="text-3xl font-bold text-[#042A4C] mb-4">
+              Perguntas <span className="text-transparent bg-clip-text bg-gradient-to-t from-[#00DAA7] to-[#2A99E7]">Frequentes</span>
             </h2>
-            <p className="text-lg text-slate-700">
+            <p className="text-lg text-slate-500">
               Respostas rápidas para as dúvidas mais comuns.
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-gradient-to-br via-blue-500 to-cyan-300 from-blue-400 rounded-3xl p-6 shadow-lg border border-slate-100">
+            <div className="bg-gradient-to-br via-[#2A99E7] to-[#00DAA7] from-[#042A4C] rounded-3xl p-6 shadow-lg border border-slate-100">
               <h3 className="text-lg font-bold text-slate-100 mb-3">Como agendar uma consulta?</h3>
               <p className="text-slate-100 text-sm">
                 Você pode agendar através do telefone, WhatsApp, email ou preenchendo o formulário acima. 
@@ -301,7 +297,7 @@ const Contact = () => {
               </p>
             </div>
             
-            <div className="bg-gradient-to-br via-blue-500 to-cyan-300 from-blue-400 rounded-3xl p-6 shadow-lg border border-slate-100">
+            <div className="bg-gradient-to-br via-[#2A99E7] to-[#00DAA7] from-[#042A4C] rounded-3xl p-6 shadow-lg border border-slate-100">
               <h3 className="text-lg font-bold text-slate-100 mb-3">Aceitam convênios?</h3>
               <p className="text-slate-100 text-sm">
                 Sim! Trabalhamos com os principais convênios odontológicos. 
@@ -309,7 +305,7 @@ const Contact = () => {
               </p>
             </div>
             
-            <div className="bg-gradient-to-br via-blue-500 to-cyan-300 from-blue-400 rounded-3xl p-6 shadow-lg border border-slate-100">
+            <div className="bg-gradient-to-br via-[#2A99E7] to-[#00DAA7] from-[#042A4C] rounded-3xl p-6 shadow-lg border border-slate-100">
               <h3 className="text-lg font-bold text-slate-100 mb-3">Qual o prazo para resposta?</h3>
               <p className="text-slate-100 text-sm">
                 Respondemos em até 24 horas em dias úteis. Para emergências, 
@@ -317,7 +313,7 @@ const Contact = () => {
               </p>
             </div>
             
-            <div className="bg-gradient-to-br via-blue-500 to-cyan-300 from-blue-400 rounded-3xl p-6 shadow-lg border border-slate-100">
+            <div className="bg-gradient-to-br via-[#2A99E7] to-[#00DAA7] from-[#042A4C] rounded-3xl p-6 shadow-lg border border-slate-100">
               <h3 className="text-lg font-bold text-slate-100 mb-3">Fazem atendimento de emergência?</h3>
               <p className="text-slate-100 text-sm">
                 Sim! Para emergências odontológicas, temos um número específico 
