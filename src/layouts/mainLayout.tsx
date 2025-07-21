@@ -8,21 +8,17 @@ interface Props {
 
 const MainLayout = ({ children }: Props) => {
   return (
-    <div className="min-h-screen flex flex-col relative pt-24">
+    <div className="min-h-screen flex flex-col relative">
       <div className="absolute inset-0 -z-10 w-full h-full">
         <DarkVeil />
       </div>
       <Header />
-      <main className="flex-1 py-8">
+      <main className="flex-1">
         <div className="container mx-auto px-4 max-w-6xl">
           {children}
         </div>
       </main>
-      <div className="relative w-full">
-        <div className="relative z-10">
-          <Footer />
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 };

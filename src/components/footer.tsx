@@ -1,35 +1,28 @@
 import { Link } from "react-router-dom";
-import logoDental from '../assets/logo-dental.svg';
 
 const Footer = () => {
 
   const contactInfo = [
-    { icon: "📞", text: "(11) 99999-9999" },
-    { icon: "📧", text: "contato@nomedaempresa.com" },
-    { icon: "📍", text: "Rua das Flores, 123 - São Paulo" },
-    { icon: "🕒", text: "Seg-Sex: 8h às 18h" },
+    { icon: "📞", text: "(11) 99777-6658" },
+    { icon: "📧", text: "eduardo.gillung@gmail.com" },
+    { icon: "📍", text: "EduardoGillung" },
   ];
 
   const socialLinks = [
     { href: "#", icon: "📱", label: "WhatsApp" },
     { href: "#", icon: "📘", label: "Facebook" },
-    { href: "#", icon: "📷", label: "Instagram" },
   ];
 
   return (
-    <footer className="bg-[#042A4C] backdrop-blur-sm text-white mt-auto border-t border-slate-700/50">
+    <footer className="bg-transparent backdrop-blur-sm">
       <div className="container mx-auto px-4 max-w-6xl py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Brand Section */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-3 group">
-              <img src={logoDental} alt="Logo Dental Solutions" className="w-8 h-8 rounded-full" />
-              <span className="bg-gradient-to-t from-[#00DAA7] to-[#00E1FF] bg-clip-text text-transparent font-semibold">Nome</span> 
-              <span className="text-cyan-50 font-semibold">Empresa</span>
+              <span className="bg-slate-200 bg-clip-text text-transparent font-semibold">Eduardo Gillung</span> 
             </Link>
-            <p className="text-slate-200 text-sm leading-relaxed">
-              Cuidando do seu sorriso com tecnologia de ponta e profissionais experientes. 
-              Sua saúde bucal é nossa prioridade.
+            <p className="text-slate-200 text-4xl leading-relaxed">
+               Vamos começar?
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
@@ -48,7 +41,7 @@ const Footer = () => {
           
           {/* Contact Info */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-cyan-400">Contato</h3>
+            <h3 className="text-lg font-semibold text-slate-200">Contato</h3>
             <div className="space-y-3">
               {contactInfo.map((contact, index) => (
                 <div key={index} className="flex items-center space-x-3 text-slate-300 text-sm">
@@ -60,9 +53,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-slate-700/50 mt-8 pt-8 text-center">
-          <p className="text-slate-500 text-sm">
-            &copy; 2024 Dental Solutions. Todos os direitos reservados.
+        <div className="border-t border-slate-800/50 mt-8 pt-8 text-center">
+          <p className="text-slate-600 text-sm">
+            &copy; 2025 Eduardo Gillung. Todos os direitos reservados.
           </p>
         </div>
       </div>
