@@ -23,7 +23,10 @@ const Footer = () => {
               <span className="bg-slate-200 bg-clip-text text-transparent font-semibold">Eduardo Gillung</span> 
             </Link>
             <p className="text-slate-200 text-4xl leading-relaxed">
-               Vamos começar?
+              Ready to get started?
+            </p>
+            <p className="text-slate-200 text-2xl leading-relaxed">
+              Let's work together.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social) => (

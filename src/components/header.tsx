@@ -25,14 +25,15 @@ const Header = () => {
         {/* Navigation */}
         <GlassSurface
           width="100%"
+          height="60%"
           borderWidth={0.1}
           borderRadius={32}
-          blur={10}
-          opacity={0.2}
+          blur={24}
+          opacity={0.8}
           brightness={100}
-          style={{ background: 'rgba(255,255,255,0.20)' }}
+          style={{ background: 'rgba(255,255,255,0.65)' }}
         >
-          <nav className="flex flex-nowrap justify-center items-center space-x-8 h-14 whitespace-nowrap">
+          <nav className="flex justify-center items-center space-x-8">
             {navigationItems.map((item) => (
               <Link
                 key={item.to}
