@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+
 const Footer = () => {
 
   const contactInfo = [
@@ -15,7 +16,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-transparent backdrop-blur-sm">
-      <div className="container mx-auto px-4 max-w-6xl py-12">
+      <div className="container mx-auto px-4 max-w-4xl py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-3 group">

@@ -6,7 +6,7 @@ const Home = () => {
 
         <div className="relative z-10 container mx-auto px-4 max-w-6xl py-6">
           <div className="text-center max-w-6xl mx-auto">
-            <h1 className="text-5xl md:text-5xl font-bold text-slate-200 mb-12 leading-tight">
+            <h1 className="text-4xl font-bold text-slate-200 mb-12 leading-tight">
               Interfaces, websites e identidades visuais
             
               <span className="block font-extrabold tracking-tight">
@@ -35,6 +35,8 @@ const Home = () => {
         </div>
       </section>
 
+      <hr className="border-t-2 border-slate-300 w-full max-w-6xl mx-auto my-8" />
+
       <section className="container mx-auto px-4 max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-bold text-slate-200 mb-8 text-center">Perguntas Frequentes</h2>
         <div className="space-y-6 max-w-2xl mx-auto">
@@ -56,6 +58,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+      
+      <hr className="border-t-2 border-slate-300 w-full max-w-6xl mx-auto my-8" />
       
     </div>
   );

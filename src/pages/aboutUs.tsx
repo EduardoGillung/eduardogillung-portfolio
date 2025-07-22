@@ -75,7 +75,7 @@ const AboutUs = () => {
 
   return (
     <FadeContent duration={900} easing="ease-out" initialOpacity={0}>
-      <div className="space-y-16 pb-16">
+      <div className="space-y-16">
         {/* Hero Section */}
         <section className="py-12">
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
