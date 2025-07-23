@@ -13,41 +13,44 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="w-full bg-transparent sticky top-0 z-50 backdrop-blur-md">
-      <div className="container mx-auto max-w-4xl grid grid-cols-3 items-center h-24">
-        {/* Logo */}
-        <Link to="/" className="group flex items-center">
-          <div className="flex flex-col items-start">
-            <span className="text-2xl transition-colors text-slate-200 font-semibold">Eduardo Gillung</span>
-          </div>
-        </Link>
+    <header className="w-full bg-transparent sticky top-0 z-50">
+      <div className="container mx-auto max-w-7xl h-24 px-4 grid grid-cols-3 items-center">
+        {/* Logo - centralizado no mobile, à esquerda no desktop */}
+        <div className="col-span-1 flex justify-center md:justify-start">
+          <Link to="/" className="group flex flex-col items-center md:items-start">
+            <span className="text-2xl transition-colors text-slate-200 font-semibold leading-none">Eduardo</span>
+            <span className="text-2xl transition-colors text-slate-200 font-semibold leading-none">Gillung</span>
+          </Link>
+        </div>
 
-        {/* Navigation */}
-        <GlassSurface
-          width="100%"
-          height="60%"
-          borderWidth={0.1}
-          borderRadius={32}
-          blur={24}
-          opacity={0.8}
-          brightness={100}
-          style={{ background: 'rgba(255,255,255,0.65)' }}
-        >
-          <nav className="flex justify-center items-center space-x-8">
-            {navigationItems.map((item) => (
-              <Link
-                key={item.to}
-                to={item.to}
-                className="text-slate-200 transition-all duration-200 transform hover:scale-110 hover:text-red-500"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </nav>
-        </GlassSurface>
+        {/* Navigation (desktop) - permanece centralizada */}
+        <div className="hidden md:flex w-full h-full items-center justify-center col-span-1">
+          <GlassSurface
+            width="100%"
+            height="60%"
+            borderWidth={0.1}
+            borderRadius={32}
+            blur={24}
+            opacity={0.8}
+            brightness={100}
+            style={{ background: 'rgba(255,255,255,0.65)' }}
+          >
+            <nav className="flex justify-center items-center space-x-8">
+              {navigationItems.map((item) => (
+                <Link
+                  key={item.to}
+                  to={item.to}
+                  className="text-slate-200 transition-all duration-200 transform hover:scale-110 hover:text-red-500"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
+          </GlassSurface>
+        </div>
 
-        {/* Mobile Menu Button */}
-        <div className="flex justify-end">
+        {/* Mobile Menu Button - totalmente à direita no mobile */}
+        <div className="col-span-1 flex justify-end">
           <button
             className="md:hidden p-2 rounded-lg text-slate-300 hover:bg-cyan-300 hover:text-cyan-500 transition-colors"
             onClick={() => setMobileMenuOpen(true)}

@@ -120,8 +120,8 @@ void main() {
 `;
 
 export default function Balatro({
-  spinRotation = -2.0,
-  spinSpeed = 7.0,
+  spinRotation = -1.0,
+  spinSpeed = 1.0,
   offset = [0.0, 0.0],
   color1 = "#DE443B",
   color2 = "#560000",
@@ -130,7 +130,7 @@ export default function Balatro({
   lighting = 0.4,
   spinAmount = 0.25,
   pixelFilter = 1200.0,
-  spinEase = 1.0,
+  spinEase = 2.5,
   isRotate = false,
   mouseInteraction = true,
 }: BalatroProps) {

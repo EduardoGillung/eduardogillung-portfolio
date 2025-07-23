@@ -15,8 +15,8 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-transparent backdrop-blur-sm">
-      <div className="container mx-auto px-4 max-w-4xl py-12">
+    <footer className="bg-transparent">
+      <div className="container mx-auto px-4 max-w-4xl py-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-3 group">
@@ -57,7 +57,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-slate-800/50 mt-8 pt-8 text-center">
+        <div className="border-t border-slate-800/50 mt-4 pt-4 text-center">
           <p className="text-slate-600 text-sm">
             &copy; 2025 Eduardo Gillung. Todos os direitos reservados.
           </p>
