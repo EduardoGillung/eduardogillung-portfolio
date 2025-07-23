@@ -46,7 +46,7 @@ const Home = () => {
                 direction="left"
                 speed="normal"
                 pauseOnHover={true}
-                className="border border-slate-800 rounded-xl bg-[#181818]"
+                className="border border-slate-800 rounded-xl"
               />
             </div>
           </section>

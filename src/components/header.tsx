@@ -18,8 +18,8 @@ const Header = () => {
         {/* Logo - centralizado no mobile, à esquerda no desktop */}
         <div className="col-span-1 flex justify-center md:justify-start">
           <Link to="/" className="group flex flex-col items-center md:items-start">
-            <span className="text-2xl transition-colors text-slate-200 font-semibold leading-none">Eduardo</span>
-            <span className="text-2xl transition-colors text-slate-200 font-semibold leading-none">Gillung</span>
+            <span className="text-2xl transition-colors text-slate-200 font-semibold leading-none bg-black rounded-2xl pr-2">Eduardo</span>
+            <span className="text-2xl transition-colors text-slate-200 font-semibold leading-none bg-black rounded-2xl pl-2">Gillung</span>
           </Link>
         </div>
 
